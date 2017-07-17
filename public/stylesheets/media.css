@@ -1,0 +1,1984 @@
+
+@media only screen and (min-width : 1600px) {
+	.top-about .top-about-inner .image {
+	    height: 74vh;
+	}
+
+	.top-courses .top-courses-image-inner .image{
+		height: 74vh;
+	}
+
+	.contact-1 .image{
+	  height: 70vh;
+	  overflow: hidden;
+	}
+
+	.contact-3 .title {
+    	right: calc(17% + 750px);
+	}
+
+	.contact-3 .map-cont {
+		width: 900px;
+	    height: 600px;
+	    margin: -50px 0;
+    	right: 10.5%;
+	}
+
+	.contact-3 .desc {
+    	right: calc(10.5% + 490px);
+	}
+
+	.contact-3 .bg {
+    	width: 67%;
+	}
+
+	.home4 p, .home2 p.description{
+		width: 60%;
+	}
+
+	.home2b p.description {
+	    width: 75%;
+	}
+	.top-mag .date-selector{
+		right: 25%
+	}
+}
+
+@media only screen and (max-width : 1270px) {
+	.home3 .selector-slider .selector-slider-single{
+		letter-spacing: 13px
+	}
+
+	.home3 .slider-inner-selectors{
+		font-size: 40px;
+		left: 0px;
+		right: auto;
+	}
+
+	.home3 .slider-inner-selectors .selector-single::before {
+	    margin: 29px 0;
+	}
+
+	.home3 .date-group{
+		width: 350px
+	}
+
+	.home3 .when {
+	    margin-right: 50px;
+	}
+}
+
+@media only screen and (max-width : 1250px) {
+	.menu ul{
+		display: none;
+	}
+
+	.menu ul.summer-inner{
+		display: block;
+	}
+
+	.close-summer{
+		right: 50px;
+    	top: 37px;
+	}
+    
+	.menu {
+	    height: auto;
+	    background-color: #fafafa;
+	    padding-bottom: 60px;
+	}
+
+	.menu-mobile-trigger{
+		display: block;
+	}
+
+	.logo-white{
+		display: none;
+	}
+
+	.logo{
+	    left: 50px;
+	    top: 40px;
+	    opacity: 1
+	}
+
+	.close-summer {
+	    right: 50px;
+	    top: 37px;
+	    opacity: 1
+	}
+
+	.hero-slide {
+	    width: calc(100% - 100px);
+	    left: 50px;
+	   	height: calc(100vh - 105px);
+    	margin-top: 105px;
+	}
+
+	.hero-slide h1{
+		margin-left: 110px
+	}
+
+	.top-mag .date-selector{
+		right: 12%
+	}
+
+	.top-about, .top-courses, .top-mag, .big-journal, .contact-1 {
+    	margin-top: 120px;
+	}
+
+	footer, .footerspace {
+    	height: 155px;
+	}
+
+	.inner-footer {
+	    padding: 40px 50px;
+	}
+
+	.link-footer ul li {
+	    padding: 8px 0px 8px 40px;
+	    font-size: 13px;
+	    text-align: right;
+	}
+
+	.link-footer ul li a::before {
+	  bottom: 3px;
+	}
+
+	.link-footer ul li a:hover::before {
+	  height: 7px;
+	}
+
+	.other .other-selector {
+    	margin: 40px 5% 70px;
+	}
+
+	.other .other-single-selector {
+    	margin: 20px 20px;
+    	width: 100%;
+	}
+
+	.hero-slide .video-trigger {
+	    right: 50px;
+	    bottom: 40px;
+	}
+
+	.home2b-content-ext .bg{
+		bottom: 25vh
+	}
+	
+
+}
+
+@media only screen and (max-width : 1100px) {
+	.contact-3 .map-cont {
+	    width: 80vw;
+	    height: 45vw;
+	    right: 5%;
+	}
+
+	.contact-3 .title {
+	    right: auto;
+	    left: 5%;
+	    margin-top: -95px;
+	}
+
+	.contact-3 .bg {
+	    width: 80vw;
+	    left: 7vw;
+	}
+
+	.top-mag .date-selector{
+		display: none;
+	}
+
+	.about-1 .desc-slider {
+	    width: 80%;
+	}
+	#portfolio-title2{
+		font-size: 9vw;
+		bottom: 55%;
+	}
+}
+
+
+@media only screen and (max-width : 992px) {
+
+
+
+	.hero-slide h1 {
+    	font-size: 85px;
+    	margin-left: 50px;
+    	margin-top: -101px;
+	}
+
+	.hero-slide h1 span.span-outer {
+    	margin-top: 12px;
+	}
+
+	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
+	    width: 610px;
+	}
+
+	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
+	    width: 537px;
+	}
+
+	.hero-slide h1.eng  span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner{
+		width: 340px
+	}
+
+	.hero-slide h1.eng  span.span-outer:nth-child(2), .hero-slide h1.eng span.span-outer:nth-child(2) .span-inner{
+		width: 520px
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(1), .hero-slide h1.fr span.span-outer:nth-child(1) .span-inner{
+		width: 630px
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(2), .hero-slide h1.fr span.span-outer:nth-child(2) .span-inner{
+		width: 500px
+	}
+
+	.home1 p {
+	    width: 80%;
+	    margin: 100px 10% 130px;
+	}
+
+	.home2 {
+    	margin-top: 10vw;
+	}
+
+	.home2 .desc-slider {
+   		width: 95%;
+    	padding: 50% 0 0 5%;
+	}
+
+	.home2-content-ext {
+	    padding: 0px 8% 50px 0%;
+	}
+
+	.home2 h2 {
+    	margin: 0 0 40px;
+	}
+
+	.home2 .slider-inner {
+	    width: 80vw;
+	    height: 50vw;
+	    overflow: hidden;
+	    margin-top: -15vw;
+	}
+
+	.home2b {
+	    margin-top: 70px;
+	}
+
+	.home2b-content-ext{
+		padding-top: 0
+	}
+
+	.home2b .slider-inner {
+		width: 84vw !important;
+    	padding-left: 11%;
+	    height: 55vw;
+	    margin-top: 45px;
+	}
+
+	.home2b-content-ext .bg {
+	    bottom: -20px;
+	    width: 95%;
+	}
+
+	.home2 p.description {
+	    margin: 40px 0 20px;
+	}
+
+	.home2-content-ext .bg {
+	    width: 95%;
+	    top: 3vw;
+	    left: 0;
+	    right: auto;
+	}
+
+	.home3{
+		display: none;
+	}
+
+	.home3-mob{
+		display: block;
+	}
+
+	.home3-content-ext {
+	    padding: 100px 0 10px 0%;
+	}
+
+	.home4 {
+    	margin-top: 30px;
+	}
+
+	.home4 .col-50{
+		width: 100%
+	}
+
+	.home4 .single-col-1 .col-50-inner {
+	    padding: 50px 50px 50px 30px;
+	}
+
+	.home4 .single-col-2 .col-50-inner {
+	    padding: 50px 30px 50px 50px;
+	}
+
+	.home4 .col-50-inner .text {
+    	padding: 0 0% 0 1%;
+	}
+
+ 	/*.slider-heading{
+ 		display: none;
+ 	}*/
+
+ 	.page-content-inner {
+	    padding: 0 3vw;
+	    height: 20vh
+	}
+
+	.top-about .top-about-inner {
+	    padding: 0 7%;
+	}
+
+	.about-longtext .heading {
+	    width: 380px;
+	}
+
+	.about-longtext .text {
+    	width: calc(100% - 400px);
+    }
+
+    .about-longtext .row-text {
+	    margin: 50px 0;
+	}
+
+	.about .slider-h .slider-inner, .slider .slider-inner {
+	    width: 85vw;
+	}
+
+	.slider-summer .selectors.selectors-right{
+		right: -1px
+	}
+
+	.slider-summer .slider-inner{
+	    width: 94vw;
+	}
+
+	.slider-summer .image, .slider-summer .image-single, .slider-summer .image-single-inner {
+	    width: 94vw;
+	    height: 60vw;
+	}
+
+	.about .slider-v .slider-inner{
+		width: 50vw
+	}
+
+	.slider-h .image, .slider-h .image-single, .slider-h .image-single-inner {
+    	width: 85vw;
+    	height: 55vw;
+	}
+
+	.slider-v .image, .slider-v .image-single, .slider-v .image-single-inner {
+	    width: 50vw;
+	    height: 63vw;
+	}
+
+	.slider .image-single-inner{
+		background-size: 110% 110%
+	}
+
+	.about-longtext {
+	    margin: 180px 0 70px;
+	}
+
+	.about-1 .desc-slider{
+		width: 90%
+	}
+
+	.about-2 {
+	    margin-top: 40px;
+	}
+
+	.about-2 .desc-slider {
+	    float: right;
+	    margin-right: 15%;
+	    width: 60%;
+	}
+
+	.about-3 {
+	    margin-top: 70px;
+	}
+
+	.about-3 .desc-slider {
+	    width: 85vw;
+	    padding-right: 0;
+	}
+
+	.about-4 {
+	    margin-top: 70px;
+	}
+
+	.about-4 .desc-slider {
+	    left: 53vw;
+	    width: 42%;
+	}
+
+	.about-4b {
+	    margin-top: 130px;
+	}
+
+	.about-5 {
+    	margin-top: 150px;
+	}
+
+	.about-5 .desc-slider {
+    	left: -5vw;
+    	width: 83vw;
+	}
+
+	.top-mag .cont{
+		width: 100%;
+    	z-index: 4;
+	}
+
+	.top-mag .image{
+		width: 60%;
+	    position: absolute;
+	    right: 0;
+	}
+
+	.bg-top-mag {
+	    width: 100%;
+	}
+
+	.top-mag .image {
+	    display: none;
+	}
+
+	.top-mag .image-mob-mag {
+	    display: block;
+	}
+
+	.top-mag .cont h4 {
+    	font-size: 16px;
+    	margin-top: 80px;
+	}
+
+	.top-mag .cont h1 {
+    	font-size: 65px;
+    	margin-bottom: 60px
+	}
+
+	.top-mag .cont h1 span.span-outer {
+    	height: 82px;
+   		margin-top: 3px;
+	}
+
+	.top-mag .cont p {
+    	padding-right: 0%;
+	}
+
+	.top-courses .link-next-courses, .top-courses .link-prev-courses{
+		display: none;
+	}
+
+	.top-courses-info{
+		width: 100%;
+		margin-left: 0
+	}
+
+	.top-courses-year {
+	    font-size: 27px;
+	    right: 10%;
+	    bottom: -85px;
+	    width: 100%;
+	    text-align: right;
+	    display: block;
+	}
+
+	.top-courses .top-courses-image-inner{
+		padding: 0 50px
+	}
+
+	.top-courses-info-inner {
+    	padding: 70px 50px;
+	}
+
+	.single-teacher .desc-teacher-menu {
+    	width: 200px;
+    }
+
+    .single-teacher .desc-text-teacher {
+    	width: calc(100% - 200px);
+	}
+
+	.single-teacher .desc-teacher {
+    	width: 96%;
+    	padding: 0 2%;
+	}
+
+	.single-teacher {
+    	margin: 85px 0 80px;
+	}
+	
+	.mag-1 .desc-slider {
+	    width: 90vw;
+	    padding: 8% 5vw 0 5vw;
+	}
+
+	.mag-content-ext {
+	    padding: 60px 8% 30px 0%;
+	}
+
+	.mag-quot {
+	    width: 80%;
+	    margin: 30px 8% 80px;
+	    font-size: 30px;
+	}
+
+	.gallery {
+    	margin: 60px 0;
+	}
+
+	.gallery h3 {
+    	font-size: 65px;
+    	line-height: 1.2;
+	}
+
+	.big-journal .cont .col-50-inner{
+		padding-left: 0
+	}
+
+	.big-journal .cont h1 {
+	    margin-top: 0px;
+	    margin-bottom: 40px;
+	    padding-right: 15%;
+	}
+
+	.big-journal .cont p {
+    	padding-right: 5%;
+	}
+
+	.small-journal {
+    	margin-top: 150px;
+	}
+
+	.contact-1 .image {
+    	width: 70%;
+	}
+
+	.contact-1 .title {
+	    width: 30%;
+	    height: auto;
+	    padding-left: 0px;
+	    float: left;
+	    margin-left: 0px;
+	    position: absolute;
+	    bottom: 0;
+	}
+
+	.contact-2 .form {
+	    width: 80%;
+	    padding: 13% 0% 0px 5%;
+	}
+
+	.contact-2 form input, .contact-2 form textarea{
+		width: 100%;
+	}
+
+	.contact-2 form label {
+    	margin-bottom: 9px;
+	}
+
+	.summer .bg {
+	    width: 100%;
+	    height: 300px;
+    	bottom: -50px;
+	    margin: 0;
+	}
+
+	.summer .top-courses-title {
+	    bottom: -133px;
+	    right: -30px;
+	}
+
+	.summer-module {
+    	margin: 50px 0;
+	}
+
+	.summer-module1 {
+	    margin-top: 200px;
+	}
+
+	.summer-module .single-summer-text {
+	    margin-top: 0;
+	}
+
+	.summer-module h2 {
+	    margin-bottom: 40px;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+
+	.summer-module .single-summer-text .col-50-inner{
+	    padding: 0 20px 0 40px;
+	}
+
+	.summer-module p {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+
+	.summer h2.big-title-slider {
+	    margin-top: 0;
+	}
+
+	.single-teacher.summer{
+		margin-top: 30px;
+		margin-bottom: 70px
+	}
+
+	.single-teacher.summer .top-teacher-title{
+		margin-top: 0;
+		margin-bottom: 20px
+	}
+
+	.single-teacher.summer .top-teacher-title p{
+		margin-top: 15px
+	}
+
+	.summer .biography-teacher {
+	    -webkit-column-count: 1;
+	    -moz-column-count: 1;
+	    column-count: 1;
+	    -webkit-column-gap: 0;
+	    -moz-column-gap: 0;
+	    column-gap: 0;
+	}
+
+	.summer .desc-slider-summer {
+	    width: 92vw;
+	    padding: 0 1vw;
+	}
+
+	.summer .desc-text-teacher {
+	    width: 100%;
+	}
+
+	.other-summer {
+	    width: 100%;
+	    margin-left: 0;
+	}
+
+	.other-summer .other-selector .word {
+		max-width: 70vw;
+	}
+
+	.other-summer .other-selector .word br{
+		display: none;
+	}
+
+	.week-selector h2.big-title-slider {
+	    font-size: 60px;
+	    margin-top: 80px;
+	    margin-bottom: 40px;
+	}
+
+	.week-selector .single-column-week p.red br{
+		display: none;
+	}
+
+	.week-selector .single-column-week {
+	    width: 96%;
+	    padding: 2%;
+	}
+
+	.week-selector .number{
+		margin-bottom: 0;
+		margin-top: 30px
+	}
+
+	.week-details-row {
+    	margin: 0;
+	}
+
+	.columns-last .single-column-last {
+	    width: 94%;
+	    padding: 3%;
+	}
+
+	.columns-last {
+	    margin: 100px 0 30px;
+	}
+
+	section.costi{
+		min-height: 90px;
+		margin-top: 50px;
+	}
+
+	.summer-people .top-courses-info .top-courses-desc{
+		-webkit-column-count: 1;
+	    -moz-column-count: 1;
+	    column-count: 1;
+	    -webkit-column-gap: 0;
+	    -moz-column-gap: 0;
+	    column-gap: 0;
+	}
+
+}
+
+
+@media only screen and (min-width : 851px) {
+
+}
+
+
+
+/* ModalitÃ  tablet */
+@media only screen and (max-width : 850px) {
+
+	#portfolio-title2{
+		font-size: 10vw;
+		bottom: 55%;
+	}
+
+	.logo {
+	    left: 30px;
+	    top: 30px;
+	}
+
+	.close-summer {
+	    right: 30px;
+	    top: 27px;
+	}
+
+	.menu {
+	    padding-bottom: 40px;
+	}
+
+	.menu-summer-inner{
+		padding-bottom: 0px
+	}
+
+	.hero-slide {
+	    width: calc(100% - 60px);
+	    left: 30px;
+	    height: calc(100vh - 85px);
+	    margin-top: 85px;
+	}
+
+	.menu-mobile-trigger, .modal-video .close-video {
+	    right: 30px;
+	    top: 30px;
+	}
+
+	.hero-slide .video-trigger{
+		right: 30px;
+	    bottom: 25px;
+	}
+
+	.menu-mobile-modal .close-modal{
+		right: 30px;
+	    top: 30px;
+	}
+
+	.inner-footer {
+	    padding: 40px 40px;
+	}
+
+	.link-footer ul li {
+	    padding: 8px 0px 8px 35px;
+	}
+
+	.home1 p {
+	    width: 88%;
+	    margin: 100px 6% 130px;
+	}
+
+	.home2 .slider-inner {
+	    width: 92vw;
+	    height: 62vw;
+	    left: 4vw;
+	}
+
+	.home4 {
+		display: block;
+	}
+
+
+ 	.top-about .top-about-inner .image, .top-courses .top-courses-image-inner .image{
+ 		height: auto;
+ 	}
+
+ 	.bg-top-about {
+	    width: 97%;
+	    height: 420px;
+	}
+
+	.about-longtext .heading, .about-longtext .text{
+		width: 100%
+	}
+
+	.about-longtext .heading {
+		margin-bottom: 25px
+	}
+
+	.about-longtext .heading .line {
+	    margin: 10px 25px 10px 0;
+	}
+
+	.about-content-ext-last .bg{
+		width: 100%;
+	}
+
+	.about-content-inner-last {
+	    padding: 45% 0% 0 4%;
+	}
+
+	.about-5 .desc-slider {
+    	left: 0;
+    	width: 96%;
+	}
+
+	.top-courses-title {
+	    bottom: -65px;
+	    margin-left: 1%;
+	}
+
+	.top-courses-title h1{
+		font-size: 80px
+	}
+
+	.top-courses-title h1 span.span-outer {
+	    height: 94px;
+	    margin-top: 0px;
+	}
+
+	.single-teacher .top-teacher-title{
+		margin-bottom: 30px
+	}
+
+	.single-teacher .top-teacher-title h2 {
+	    margin-left: 15px;
+	    margin-right: 15px;
+	}
+
+	.single-teacher .top-teacher-title p {
+	    margin: 30px 0px 30px 5px;
+	}
+
+	.other {
+	    margin-top: 80px;
+	}
+
+	.big-journal .image{
+		width: 65%;
+	}
+
+	.big-journal .image .col-50-inner{
+		padding: 0;
+	}
+
+	.big-journal .cont{
+		width: 100%;
+	}
+
+	.big-journal .cont h1 {
+	    margin-top: -80px;
+	}
+
+	.big-journal .bg {
+    	width: 120%;
+	}
+
+	.small-journal .col-50 {
+	    width: 100%;
+	}
+
+	.small-journal .col-50-inner {
+	    padding: 0;
+	}
+
+	.small-journal .bg{
+		width: 120%;
+    	height: 700px;
+    	left: -10%;
+	}
+
+	.contact-1 .image {
+	    width: 70%;
+	}
+
+
+	.contact-1 .title{
+		width: auto;
+	    position: absolute;
+	    right: auto;
+	    left: 30px;
+	}
+
+	.contact-1 .title h1{
+		margin-top: 0px;
+	}
+
+	.contact-2 {
+	    margin-top: -20px;
+	    margin-left: 0px;
+	}
+
+	.contact-2 .form {
+	    width: 95%;
+	    padding: 5% 0% 0px 5%;
+	}
+
+	.contact-3 .map-row {
+	    height: 450px;
+	}
+
+	.contact-3 .desc {
+	    right: auto;
+	    left: 12%;
+	}
+
+	.mag-1 .image{
+		left: 4vw
+	}
+
+	.mag-1 .desc-slider {
+	    width: 88vw;
+	    padding: 50px 3vw 0 4vw;
+	}
+
+	.mag-2 {
+	    margin: 30px 0 70px;
+	}
+
+	.mag-2 .col-50{
+		width: 100%
+	}
+
+	.mag-2 .date-selector {
+	    margin: 0px 0 40px;
+	}
+
+	.mag-2 .cont p {
+	    display: none;
+	}
+
+	.mag-2 .slider, .mag-2 .slider-inner, .mag-2 .slider .image, .mag-2 .slider .image-single, .mag-2 .slider .image-single-inner{
+		width: 87vw;
+		height: 60vw
+	}
+
+	.mag-quot {
+	    font-size: 27px;
+	}
+
+	.mag-1 .slider .selectors {
+	    left: auto;
+	    right: -4vw;
+	}
+
+	#mc_embed_signup .input-line {
+	    width: 85%;
+	}
+
+	.col-input {
+		width: 100%
+	}
+
+	.col-button {
+		float: right;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	body {
+	  overflow: default;
+	  overflow-x: hidden;
+	  overflow-y: scroll;
+	}
+
+	video {
+	    width: 100%;
+	    height: auto;
+	    object-fit: cover;
+	}
+
+	.mag-2 {
+		padding: 0 2%;
+	    margin: 30px 0 0px;
+	}
+
+	.mag-2 .date-single-selector:nth-child(1) .number{
+		display: none;
+	}
+
+	.mag-2 .date-single-selector:nth-child(2), .mag-2 .date-single-selector:nth-child(3){
+		display: none;
+	}
+
+	.mag-2 .slider .image-single:nth-child(2), .mag-2 .slider .image-single:nth-child(3){
+		display: none;
+	}
+
+	.mag-2 .slider, .mag-2 .slider-inner, .mag-2 .slider .image, .mag-2 .slider .image-single, .mag-2 .slider .image-single-inner {
+	    width: 92vw;
+	    height: 52vw;
+	}
+
+	#mc_embed_signup .button{
+		width: auto;
+	}
+
+	.about-2 .desc-slider .more-details {
+	    right: -90px;
+	}
+
+	.summer-last h2.big-title-slider{
+		font-size: 60px;
+		margin-bottom: -50px;
+	}
+
+	.small-journal-summer{
+		margin-top: 20px;
+		margin-bottom: 0
+	}
+
+	.small-journal-summer .bg{
+		display: none;
+	}
+
+	.top-accomodation .top-about-inner {
+	    padding: 0 2%;
+	    left: 4%;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	/*.hero-slide h1{
+		display: none;
+	}
+
+	.hero-slide h1.mobile-title{
+		display: block;
+		font-size: 50px;
+  		letter-spacing: 2px;
+		margin-left: 30px;
+		top: 55%;
+		line-height: 1.2;
+	}*/
+
+	.hero-slide .scroll{
+		display: none;
+	}
+
+	.hero-slide h1 {
+	    font-size: 65px;
+	    margin-top: -77px
+	}
+
+	.hero-slide h1 span.span-outer{
+		margin-top: 0;
+		height: 75px;
+	}
+
+	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
+	    width: 477px;
+	}
+
+	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
+	    width: 418px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {
+	    width: 263px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(2), .hero-slide h1.eng span.span-outer:nth-child(2) .span-inner {
+	    width: 408px;
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(1), .hero-slide h1.fr span.span-outer:nth-child(1) .span-inner{
+		width: 490px
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(2), .hero-slide h1.fr span.span-outer:nth-child(2) .span-inner{
+		width: 387px
+	}
+
+	.home1 p {
+	    margin: 50px 6% 70px;
+	    font-size: 23px;
+	}
+
+	.home2-content-ext .bg {
+	    width: 100%;
+	}
+
+	.home2 .desc-slider {
+	    width: 100%;
+	}
+
+	.home2 h2 {
+	    font-size: 45px;
+	}
+
+	.home3-content-ext {
+	    padding: 70px 0 10px 0%;
+	}
+
+	.single-course-mob {
+	    margin: 10px 0 10px;
+	}
+
+	.home4 .single-col-1 .col-50-inner {
+	    padding: 40px 30px 40px 15px;
+	}
+
+	.home4 .single-col-2 .col-50-inner {
+	    padding: 40px 30px 40px 15px;
+	}
+
+	.home4 h2 {
+	    font-size: 23px;
+	    margin-top: 30px;
+	}
+
+	.top-about, .top-courses, .top-mag, .big-journal, .contact-1 {
+	    margin-top: 100px;
+	}
+
+	footer{
+		background-color: #fff
+	}
+
+	footer, .footerspace {
+	    height: 450px;
+	}
+
+	.inner-footer {
+	    padding: 30px 10px;
+	}
+
+	.logo-footer {
+	    float: left;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.link-footer ul{
+		width: 100%;
+		margin-top: 20px
+	}
+
+	.link-footer ul li {
+	    width: 100%;
+	    padding: 8px 0 8px;
+	    float: left;
+	    text-align: center;
+	}
+
+	.link-footer ul.lang-link li{
+		width: 45%;
+	}
+
+	.link-footer ul.lang-link li:nth-child(1){
+		text-align: right;
+		padding-right: 5%
+	}
+
+	.link-footer ul.lang-link li:nth-child(2){
+		text-align: left;
+		padding-left: 5%
+	}
+
+	.page-content-inner {
+	    padding: 0 2vw;
+	}
+
+	.bg-top-about {
+	    width: 100%;
+	    right: 0;
+	    height: 280px;
+	    top: 150px;
+	}
+
+	.top-about-title {
+	    bottom: -86px;
+	    right: 20px;
+	}
+
+	.top-about-title h1{
+		font-size: 55px
+	}
+
+	.top-about-title h1 span.span-outer {
+	    height: 75px;
+	    margin-top: -3px;
+	}
+
+	.about-longtext {
+	    margin: 40px 0 40px;
+	    z-index: 9;
+    	background-color: transparent;
+	}
+
+	.about-longtext .row-text {
+	    margin: 35px 0;
+	}
+
+	.more-details-modal .close {
+	    position: absolute;
+	    right: 20px;
+	    top: 20px;
+	}
+/*
+	.about .more-details, .more-details-modal{
+		display: none;
+		z-index: -50
+	}
+	
+	.more-details-modal.modal-prezzi{
+		display: none;
+		z-index: -50
+	}*/
+
+	.about-longtext .heading .line {
+	    margin: 10px 20px 10px 0;
+	    width: 50px
+	}
+
+	.about-longtext .heading, .about-longtext .text{
+	    width: auto;
+    	padding: 0 2%;
+	}
+
+	.about-2, .about-3  {
+	    margin-top: 15px;
+	}
+
+	#slider-2 .slider-inner {
+	    float: left;
+	}
+
+	.about-2 .desc-slider {
+	    float: left;
+	    margin-right: 0;
+	    width: 100%;
+	}
+
+	.about-3 .slider-inner, .about-5 .slider-inner {
+	    float: left;
+	}
+
+	.about-3 .desc-slider {
+	    width: 100%;
+	    float: left;
+	}
+
+	.about-4 {
+		margin-top: 10px
+	}
+
+	.about-4 .desc-slider {
+	    width: 100%;
+	    position: relative;
+	    left: 0;
+	}
+
+	.about-4b {
+	    margin-top: 50px;
+	}
+
+	.about-content-ext-last .bg {
+	    height: 90%;
+	}
+
+	.about-5 {
+	    margin-top: 50px;
+	}
+
+	.about-5 .desc-slider {
+	    left: -2vw;
+    	width: 100%;
+	    margin-top: 50px;
+	}
+
+	.about-5 .desc-slider p {
+	    -webkit-column-count: 1;
+	    -moz-column-count: 1;
+	    column-count: 1;
+	    -webkit-column-gap: 0;
+	    -moz-column-gap: 0;
+	    column-gap: 0;
+	}
+
+	.top-mag .cont h4 {
+	    font-size: 16px;
+	    margin-top: 40px;
+	    margin-bottom: 20px;
+	}
+
+	.top-mag .cont {
+	    margin-top: 0px;
+	}
+
+	.top-mag .cont h1 {
+	    font-size: 50px;
+	}
+
+	.top-mag .cont h1 span.span-outer {
+	    height: 75px;
+	    margin-top: -10px;
+	}
+
+	.mag-content-ext {
+	    padding: 20px 6% 30px 0%;
+	}
+
+	.mag-1 .desc-slider {
+	    width: 88vw;
+	    padding: 50px 20px 0 20px;
+	}
+
+	.slider-v .image-single:nth-child(2), .slider-v .image-single:nth-child(3), .slider-v .image-single:nth-child(4){
+		display: none !important
+	}
+
+	.slider-h .image-single:nth-child(2), .slider-h .image-single:nth-child(3), .slider-h .image-single:nth-child(4){
+		display: none !important
+	}
+
+	.slider-inner .selectors, .slider-inner-v .selectors, .mag-2 .date-single-selector span.line{
+		display: none;
+	}
+
+	.about{
+		padding: 0 2%;
+		width: auto;
+	}
+
+	.about-1 .desc-slider {
+    	width: 100%;
+	}
+
+	.about .slider-v .slider-inner, .about .slider-h .slider-inner{
+		width: 92vw;
+		left: 0vw
+	}
+
+	.slider-v .image, .slider-v .image-single, .slider-v .image-single-inner {
+	    width: 92vw;
+    	height: 61vw;
+	}
+
+	.slider-h .image, .slider-h .image-single, .slider-h .image-single-inner {
+	    width: 92vw;
+    	height: 61vw;
+	}
+
+	.about-5 .slider-h .slider-inner{
+		left: -2vw
+	}
+
+	#slider-2 .image-1{
+	  background-image: url(../images/about/20m.jpg);
+	}
+
+	#slider-4 .image-1{
+	  background-image: url(../images/about/41m.jpg);
+	}
+
+	#slider-4b .image-1{
+	  background-image: url(../images/about/tende-summerm.png);
+	}
+
+	.top-mag .cont{
+		width: 92vw;
+		padding: 0 2vw
+	}
+
+	.mag-2 .date-selector {
+	    margin: 0px 0 15px;
+	}
+
+	.mag-2 .date-selector .date-single-selector {
+	    font-size: 27px;
+	}
+
+	.mag-2 .date-single-selector span.number {
+	    margin: -2px 13px 0 5px;
+	}
+
+	.mag-quot {
+		font-size: 23px;
+	    width: 92%;
+	    margin: 70px 4% 80px;
+	}
+
+	.gallery {
+	    margin: 40px 0 20px;
+	}
+
+	.gallery .gallery-inner {
+	    margin-top: 160px;
+	}
+
+	.artist-gallery .bg {
+	    width: 100%;
+	}
+
+
+	.top-courses .top-courses-image-inner {
+	    padding: 0 5%;
+	}
+
+	.top-courses-title {
+	    bottom: -75px;
+	}
+
+	.top-courses-title h1 {
+	    font-size: 60px;
+	}
+
+	.top-courses-title h1 span.span-outer {
+	    height: 80px;
+	    width: 235px !important;
+	}
+
+	.top-gaga-title {
+		bottom: -110px;
+	}
+
+	.top-gaga-title h1 span.span-outer, .top-gaga-title h1 span.span-inner {
+	    width: 100vw !important;
+	    font-size: 45px;
+    	height: 72px;
+    	margin-top: -20px;
+	}
+
+	.top-courses-year {
+	    font-size: 23px;
+	    left: 5%;
+	    right: auto;
+	    bottom: -140px;
+	    text-align: left;
+	}
+
+	.top-courses-info {
+	    position: relative;
+	    margin-top: -80px;
+	    padding-top: 160px;
+	}
+
+	.top-courses-info-inner {
+	    padding: 50px 20px;
+	}
+
+	.top-courses-info .top-courses-desc {
+	    -webkit-column-count: 1;
+	    -moz-column-count: 1;
+	    column-count: 1;
+	    -webkit-column-gap: 0;
+	    -moz-column-gap: 0;
+	    column-gap: 0;
+	    margin-top: 60px
+	}
+
+	.single-teacher {
+	    margin: 55px 0 50px;
+	}
+
+	.single-teacher .top-teacher-title h2 {
+	    font-size: 47px;
+	    line-height: 1.1;
+	    margin-top: -30px;
+	}
+
+	.single-teacher .desc-teacher-menu {
+	    width: 100%;
+	    margin-bottom: 10px
+	}
+
+	.single-teacher .desc-teacher-menu a {
+	    display: inline;
+	    clear: none;
+	    width: 33%;
+    	text-align: center;
+    	font-size: 15px;
+    	letter-spacing: 1px;
+    	text-decoration: underline;
+	}
+
+	.single-teacher .desc-teacher-menu a::before{
+		display: none;
+	}
+
+	.single-teacher .desc-text-teacher {
+	    width: 100%;
+	    margin-top: 15px
+	}
+
+	.single-teacher .send-teacher{
+		margin-top: 10px
+	}
+
+	.single-teacher .send-teacher form label, .single-teacher .send-teacher form input, .single-teacher .send-teacher form textarea {
+	    width: 100%;
+	}
+
+	.other {
+	    margin-top: 70px;
+	    width: 100%;
+    	margin-left: 0;
+	}
+
+	.other .other-single-selector {
+	    margin: 8px 2% 8px 10%;
+	    width: 86%;
+	}
+
+	.other h3 {
+	    font-size: 55px;
+	    margin-top: -35px;
+	    padding-left: 15%;
+	}
+
+	.other .line, .other .other-single-selector span.number{
+		display: none;
+	}
+
+	.other span.word {
+	    left: 0px;
+	    font-size: 27px;
+	}
+
+	.big-journal .bg .latest-title{
+		display: none;
+	}
+
+	.big-journal .cont h1 {
+	    font-size: 60px;
+	    margin-top: -25px;
+	}
+
+	.big-journal .cont h1 span.span-outer{
+		margin-top: 0;
+		height: 82px
+	}
+
+	.big-journal .cont .col-50-inner {
+	    width: 92vw;
+    	padding: 0 2vw;
+	    margin-top: -30px;
+	}
+
+	.big-journal .image {
+	    width: 95vw;
+	    height: 105vw;
+	    padding: 0 2vw;
+	    overflow: hidden;
+	}
+
+	.big-journal .bg {
+	    width: 120%;
+	    right: -5%;
+	    top: 170px;
+    	height: calc(100% - 160px);
+	}
+
+	.big-journal .cont p {
+	    padding-right: 0;
+	}
+
+	.small-journal {
+	    margin-top: 30px;
+	}
+
+	.small-journal .col-50-inner{
+		width: 92vw;
+		padding: 0 2vw
+	}
+
+	.small-journal .bg{
+	    display: none;
+	}
+
+	.small-journal p, .small-journal h2{
+		padding-right: 0
+	}
+
+	.small-journal h2{
+		padding-top: 0
+	}
+
+	.contact-1{
+		min-height: 100px
+	}
+
+	.contact-1 .title{
+		display: none;
+	}
+
+	.contact-1 .image {
+	    width: 90%;
+	}
+
+	.contact-2 {
+	    margin-top: -30px;
+	}
+
+	.contact-2 .form h2  {
+	    font-size: 35px;
+	    margin-bottom: 0;
+	    padding-right: 50px
+	}
+
+	.contact-3 {
+	    padding-top: 120px;
+	    padding-bottom: 0
+	}
+
+	.contact-3 .bg {
+	    display: none;
+	}
+
+	.contact-3 .title h2{
+		font-size: 28px
+	}
+
+	.contact-3 .map-row {
+	    height: 250px;
+	}
+
+	.contact-3 .desc {
+	    right: auto;
+	    left: 5%;
+	}
+
+	.home2b .desc-slider {
+	    width: 97%;
+	}
+
+	.home2b-content-ext .bg {
+	    bottom: 0px;
+	    height: 30vh;
+	}
+
+	.about-2 .desc-slider .more-details {
+	    right: 80px;
+	}
+
+	.other-summer .other-selector .word {
+	    max-width: 85vw;
+	}
+
+	.small-journal-summer{
+		margin-top: 0px;
+	}
+
+	.top-accomodation .top-about-inner {
+	    padding: 0;
+	    left: 0;
+	}
+
+	.top-accomodation .top-about-title {
+	    bottom: -140px;
+	    right: 5vw;
+	}
+
+	.top-accomodation .top-about-title h1 span.span-outer, .top-accomodation .top-about-title h1 span.span-inner{
+		width: 90vw !important;
+    	text-align: right;
+	}
+
+	.accomodation-longtext {
+	    margin: 90px 0 0px;
+	}
+
+	.about-5-accomodation  {
+	    margin-top: 20px;
+	}
+
+	.other-summer-inner{
+		margin-top: 100px
+	}
+  
+}
+
+@media only screen and (max-width: 600px) {
+	.hero-slide h1 {
+	    font-size: 50px;
+	    margin-top: -72px
+	}
+
+	.hero-slide h1 span.span-outer{
+		margin-top: 0;
+		height: 70px;
+	}
+
+	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
+	    width: 377px;
+	}
+
+	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
+	    width: 331px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {
+	    width: 208px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(2), .hero-slide h1.eng span.span-outer:nth-child(2) .span-inner {
+	    width: 322px;
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(1), .hero-slide h1.fr span.span-outer:nth-child(1) .span-inner{
+		width: 387px
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(2), .hero-slide h1.fr span.span-outer:nth-child(2) .span-inner{
+		width: 308px
+	}
+
+	.gallery .gallery-inner {
+	    margin-top: 100px;
+	}
+
+	.gallery h3 {
+	    font-size: 50px;
+	}
+
+	.single-teacher .top-teacher {
+	    width: auto;
+	    padding: 0 2%;
+	}
+
+	section.costi h3{
+		font-size: 37px
+	}
+
+	.single-teacher-summer:nth-child(1) {
+	    margin-top: 70px;
+	}
+
+	.single-summer{
+		width: 96vw
+	}
+
+	.summer-module .single-summer-text .col-50-inner {
+	    padding: 0 10px;
+	}
+
+	.summer-module .single-summer-text {
+	    margin-top: 40px;
+	}
+
+	.summer-module .single-summer-img {
+		margin-top: 20px
+	}
+
+	.summer-module a {
+	    margin-top: 0px;
+	}
+
+	.single-teacher .top-teacher {
+	    padding: 0 1%;
+	}
+
+	.summer h2.big-title-slider{
+		font-size: 50px;
+		margin-bottom: -35px;
+	}
+
+	.single-teacher.summer .top-teacher-title{
+		display: none;
+		margin-bottom: 0;
+	}
+
+	.single-teacher.summer-last .top-teacher-title {
+	    display: block;
+	}
+
+	.summer-module {
+	    margin: 30px 0;
+	}
+
+	.summer-module:nth-child(7), .summer-module:nth-child(7) .single-summer-text {
+		margin-top: 0
+	}
+
+	.summer-module1 {
+	    margin-top: 150px;
+	}
+
+	.week-selector h2.big-title-slider {
+	    font-size: 50px;
+	}
+
+	section.costi {
+	    margin-top: 70px;
+	}
+
+	.summer .bg {
+	    height: 170px;
+	    bottom: -30px;
+	}
+
+	.summer .top-courses-title{
+		right: 20px;
+    	bottom: -105px;
+	}
+
+	.summer-module1 {
+	    margin-top: 120px;
+	}
+
+	.summer-last h2.big-title-slider {
+	    font-size: 40px;
+    	margin-bottom: -30px;
+	}
+
+	.copy-photo{
+	    position: absolute;
+	    top: 0;
+	    right: 15px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.big-journal .image {
+	    width: 92vw;
+	    height: 115vw;
+	    overflow: hidden;
+	}
+
+	.bg-top-mag{
+		height: 300px
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.logo {
+	    left: 20px;
+	    top: 20px;
+	}
+
+	.close-summer {
+	    right: 20px;
+	    top: 17px;
+	}
+
+	.menu {
+	    padding-bottom: 23px;
+	}
+
+	.menu-summer-inner {
+	    padding-bottom: 0;
+	}
+
+	.hero-slide {
+	    width: calc(100% - 40px);
+	    left: 20px;
+	    height: calc(100vh - 65px);
+	    margin-top: 65px;
+	}
+
+	.hero-slide .video-trigger {
+	    right: 5px;
+	    bottom: 7px;
+	}
+
+	.menu-mobile-trigger, .menu-mobile-modal .close-modal, .modal-video .close-video {
+	    right: 20px;
+	    top: 20px;
+	}
+
+	.hero-slide h1 {
+	    margin-left: 20px;
+	    font-size: 42px;
+	}
+
+	.hero-slide h1 span.span-outer {
+	    height: 66px;
+	}
+
+	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
+	    width: 324px;
+	}
+
+	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
+	    width: 285px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {
+	    width: 178px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(2), .hero-slide h1.eng span.span-outer:nth-child(2) .span-inner {
+	    width: 278px;
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(1), .hero-slide h1.fr span.span-outer:nth-child(1) .span-inner{
+		width: 334px
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(2), .hero-slide h1.fr span.span-outer:nth-child(2) .span-inner{
+		width: 265px
+	}
+
+	.home3-mob h2{
+		font-size: 20px
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.menu-mobile-modal-inner {
+	    top: 51%;
+	}
+
+	.hero-slide h1 {
+	    font-size: 35px;
+	    line-height: 4.5rem;
+	    margin-top: -57px;
+	}
+
+	.hero-slide h1 span.span-outer {
+	    height: 50px;
+	}
+
+	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
+	    width: 278px;
+	}
+
+	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
+	    width: 244px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {
+	    width: 153px;
+	}
+
+	.hero-slide h1.eng span.span-outer:nth-child(2), .hero-slide h1.eng span.span-outer:nth-child(2) .span-inner {
+	    width: 237px;
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(1), .hero-slide h1.fr span.span-outer:nth-child(1) .span-inner{
+		width: 286px
+	}
+
+	.hero-slide h1.fr  span.span-outer:nth-child(2), .hero-slide h1.fr span.span-outer:nth-child(2) .span-inner{
+		width: 226px
+	}
+}

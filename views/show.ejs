@@ -1,0 +1,85 @@
+
+<% include partials/header %>
+<div class="page-content">
+        <section class="top-courses top-masterclasses">
+          <div class="link-prev-courses"><%=portfolio.host%></div>
+          <div class="link-next-courses"><%=moment(portfolio.date).format('LL')%></div>
+          <div class="top-courses-image-inner">
+            <div class="image">
+              <img class="inner-image" src="<%=portfolio.image%>">
+            </div>
+            <div class="top-courses-title top-masterclasses-title" data-parallax="0.2">
+              <h1>
+                <span class="span-outer" style="width: 577px"><span class="span-inner" style="width: 577px"><%=portfolio.name%></span></span>
+                <!--<span class="span-outer" style="width: 520px"><span class="span-inner" style="width: 520px">Gillot</span></span>-->
+              </h1>
+            </div>
+            <div class="top-courses-year" data-parallax="0.15">6-7 MAG/2017</div>
+          </div>
+          <div class="top-courses-info top-masterclasses-info">
+            <div class="top-courses-info-inner">
+              <div class="top-courses-desc"><%=portfolio.desc%></div>
+            </div>
+            <div class="bg" data-parallax="0.3"></div>
+          </div>
+        </section>
+
+        <section class="home1" style="margin-top: 200px;">
+          <p data-parallax="0.2"><%=portfolio.desc%></p>
+        </section>
+
+        <div class="container">
+        <div class="row" style="padding-bottom: 150px;">
+          <div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 nopadding">
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="ytiframe" class="embed-responsive-item" width="854" height="480" src="<%=portfolio.video%>" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container">
+        <div class="wrapper">
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+          <div class="column">
+            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include partials/footer %>
