@@ -1,0 +1,52 @@
+<% include ../partials/header %>
+<div class="page-content">
+<div class="container">
+    <div class="row">
+        <h2 style="text-align: center; margin-top:200px;">Edit a New Portfolio</h2>
+        <div style="width: 30%; margin: 50px auto;">
+            <form action="/portfolios/<%= portfolio._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[name]" value="<%= portfolio.name %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[image]" value="<%= portfolio.image %>">   
+                </div>
+                <div class="form-group">                                                
+                    <input class="form-control" type="number" name="portfolio[numberofservice]" value="<%= portfolio.numberofservice %>">                                       
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[service1]" value="<%= portfolio.service1 %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[service2]" value="<%= portfolio.service2 %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[service3]" value="<%= portfolio.service3 %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[service4]" value="<%= portfolio.service4 %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[video]" value="<%= portfolio.video %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="date" name="portfolio[date]" value="<%= portfolio.date %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[host]" value="<%= portfolio.host %>">
+                </div>                
+                <div class="form-group">
+                    <input class="form-control" type="text" name="portfolio[desc]" value="<%= portfolio.desc %>">
+                </div>
+                
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/portfolio">Go Back</a>
+        </div>
+    </div>
+</div>
+</div>
+<% include ../partials/footer %>
+

@@ -45,10 +45,8 @@ var data = [
     {
         name: "Desert Mesa2", 
         image: "https://www.leonia.in/Entertainment/images/Background-Sildes/LiveEvents01.jpg",
-        numberofservice:3,
+        numberofservice:1,
         service1:"Event Branding",
-        service2:"Event Branding",
-        service3:"Event Branding",
         video:"https://www.youtube.com/embed/5YL_dOgEGVw?vq=hd720",
         host:"Ardent",
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",

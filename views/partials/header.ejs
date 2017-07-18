@@ -32,6 +32,11 @@
               </ul>
             </div>
           </li>
+          <% if(!currentUser){ %>
+            <% } else { %>
+          <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+          <li><a href="/logout">Logout</a></li>
+          <% } %>
         </ul>
       </div>
       <div class="menu-mobile-trigger">
