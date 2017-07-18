@@ -5,7 +5,7 @@ var express             = require("express"),
     middleware          = require("../middleware");
 
 function paginate(req,res,next){
-    var perPage=2;
+    var perPage=10;
     var page = req.params.page;
     Portfolio.find({}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
         if(err){
@@ -45,7 +45,43 @@ router.post("/", function(req, res){
     var host = req.body.host;
     var video = req.body.video;
     var desc = req.body.desc;
-    var newPortfolio = {name: name, image: image, numberofservice:numberofservice ,service1:service1,service2:service2,service3:service3,service4:service4,date:date,host:host,video:video,desc:desc}
+    var image1 = req.body.image1;
+    var image2 = req.body.image2
+    var image3 = req.body.image3;
+    var image4 = req.body.image4;
+    var image5 = req.body.image5;
+    var image6 = req.body.image6;
+    var image7 = req.body.image7;
+    var image8 = req.body.image8;
+    var image9 = req.body.image9;
+    var image10 = req.body.image10;
+    var image11 = req.body.image11;
+    var image12 = req.body.image12;
+    
+    var newPortfolio = {name: name, 
+                        image: image, 
+                        numberofservice:numberofservice,
+                        service1:service1,
+                        service2:service2,
+                        service3:service3,
+                        service4:service4,
+                        date:date,
+                        host:host,
+                        video:video,
+                        desc:desc,
+                        image1:image1,
+                        image2:image2,
+                        image3:image3,
+                        image4:image4,
+                        image5:image5,
+                        image6:image6,
+                        image7:image7,
+                        image8:image8,
+                        image9:image9,
+                        image10:image10,
+                        image11:image11,
+                        image12:image12
+    }
     // Create a new portfolio and save to DB
     Portfolio.create(newPortfolio, function(err, newlyCreated){
         if(err){
@@ -96,6 +132,17 @@ router.put("/:id",middleware.isLoggedIn, function(req, res){
            res.redirect("/portfolios/" + req.params.id);
        }
     });
+});
+
+// DESTROY CAMPGROUND ROUTE
+router.delete("/:id",middleware.isLoggedIn, function(req, res){
+   Portfolio.findByIdAndRemove(req.params.id, function(err){
+      if(err){
+          res.redirect("/portfolios");
+      } else {
+          res.redirect("/portfolios");
+      }
+   });
 });
 
 

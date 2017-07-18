@@ -12,5 +12,17 @@ var portfolioSchema = new mongoose.Schema({
    date:Date,
    host:String,
    desc:String,
+   image1:String,
+   image2:String,
+   image3:String,
+   image4:String,
+   image5:String,
+   image6:String,
+   image7:String,
+   image8:String,
+   image9:String,
+   image10:String,
+   image11:String,
+   image12:String,   
 });
 module.exports = mongoose.model("Portfolio", portfolioSchema);

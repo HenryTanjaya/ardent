@@ -40,6 +40,9 @@ app.use(function(req, res, next){
 app.use("/portfolios", portfolioRoutes);
 app.use("/",indexRoutes);
 
+app.get("*",function(req,res){
+    res.send("WE ARE UNDER CONSTRUCTION, ERROR 404")
+})
 
 
 app.listen(process.env.PORT, process.env.IP, function(){

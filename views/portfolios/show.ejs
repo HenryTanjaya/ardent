@@ -18,7 +18,17 @@
           </div>
           <div class="top-courses-info top-masterclasses-info">
             <div class="top-courses-info-inner">
-              <div class="top-courses-desc"><%=portfolio.desc%></div>
+              <div class="top-courses-desc"> Our Service : 
+                <% if (portfolio.numberofservice === 4){ %>
+                <%=portfolio.service1%> | <%=portfolio.service2%> | <%=portfolio.service3%> | <%=portfolio.service4%>
+                <% } else if (portfolio.numberofservice ===3){ %>
+                <%=portfolio.service1%> | <%=portfolio.service2%> | <%=portfolio.service3%>
+                <% } else if (portfolio.numberofservice ===2){ %>
+                <%=portfolio.service1%> | <%=portfolio.service2%>
+                <% } else if (portfolio.numberofservice ===1){ %>
+                <%=portfolio.service1%>
+                <% } %>
+                </div>
             </div>
             <div class="bg" data-parallax="0.3"></div>
           </div>
@@ -42,40 +52,40 @@
         <div class="container">
         <div class="wrapper">
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image1%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image2%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image3%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image4%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image5%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image6%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image7%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image8%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image9%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image10%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image11%>')"></div>
           </div>
           <div class="column">
-            <div class="inner" style="background-image: url('https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11055800_1556880671238497_1776548525_n.jpg')"></div>
+            <div class="inner" style="background-image: url('<%=portfolio.image12%>')"></div>
           </div>
         </div>
     </div>
