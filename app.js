@@ -13,7 +13,9 @@ var express             = require("express"),
 var portfolioRoutes     = require("./routes/portfolios"),
     indexRoutes         = require("./routes/index");
     
-mongoose.connect("mongodb://localhost/ardent");
+// mongoose.connect("mongodb://localhost/ardent");
+mongoose.connect("mongodb://henry:henry@ds161032.mlab.com:61032/ardent");
+//mongodb://henry:henry@ds161032.mlab.com:61032/ardent
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
