@@ -960,7 +960,7 @@ footer{
 }
 
 .hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-  width: 513px;
+  width: 713px;
 }
 
 .hero-slide h1.eng  span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {
@@ -1565,6 +1565,10 @@ video{
   background-image: url(../images/slider-home/home-3.jpg);
 }
 
+.home3 .slider-group-1 .image-1d .image-single-inner{
+  background-image: url(../images/slider-home/home-3.jpg);
+}
+
 .home3 .slider-group-2 .image-2a .image-single-inner{
   background-image: url(../images/slider-home/home-1.jpg);
 }
@@ -1581,7 +1585,7 @@ video{
 
 .home3 .slider-inner-selectors{
   font-family: 'Abril Fatface';
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: 3px;
   position: absolute;
   z-index: 4;
