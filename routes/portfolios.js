@@ -88,7 +88,7 @@ router.post("/", function(req, res){
             console.log(err);
         } else {
             //redirect back to portfolio page
-            res.redirect("/portfolios/index");
+            res.redirect("/portfolios");
         }
     });
 });
