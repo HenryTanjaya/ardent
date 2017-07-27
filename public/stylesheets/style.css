@@ -898,9 +898,9 @@ footer{
 .hero-slide{
   width: calc(100% - 150px);
   left: 75px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 160px);
   margin-top: 160px;
-  background: url(../images/slider-home/home-1.jpg) center center no-repeat;
+  background: url("https://photos-3.dropbox.com/t/2/AADOOumXTHieYC9RYwVd5FWkNn7AWvIlLnuc-LfqrN_U8A/12/688734378/jpeg/32x32/1/_/1/2/hero-slider.jpg/EMW_l9QFGAwgAigC/s7zhSUVr1gH2PckACvLFGfpW1oKJ0QrErallLeGpg6s?size=1600x1200&size_mode=3") center center no-repeat;
   background-size: cover;
 }
 
@@ -917,7 +917,7 @@ footer{
 }
 
 .mobile-title{
-  font-family: 'Abril Fatface';
+  font-family: 'Noe Display';
   font-size: 50px;
   letter-spacing: 2px;
   color: #fff;
@@ -1293,7 +1293,7 @@ video{
 }
 
 .home2 h2{
-  font-family: 'Noe Display';
+  font-family: 'Abril Fatface';
   font-size: 60px;
   letter-spacing: 3px;
   font-weight: 100;
