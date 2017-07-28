@@ -906,7 +906,7 @@ footer{
 
 .hero-slide h1{
   font-family: 'Abril Fatface';
-  font-size: 90px;
+  font-size: 78px;
   letter-spacing: 3px;
   color: #fff;
   position: absolute;
@@ -936,7 +936,7 @@ footer{
   overflow: hidden;
   position: relative;
   width: 623px;
-  height: 92px;
+  height: 102px;
   margin-top: 30px;
   border-bottom: 2px solid #fff
 }
@@ -960,7 +960,7 @@ footer{
 }
 
 .hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-  width: 713px;
+  width: 513px;
 }
 
 .hero-slide h1.eng  span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {

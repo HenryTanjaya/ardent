@@ -200,7 +200,7 @@
 @media only screen and (max-width : 992px) {
 
 	.hero-slide h1 {
-    	font-size: 85px;
+    	font-size: 75px;
     	margin-left: 50px;
     	margin-top: -101px;
 	}
@@ -210,7 +210,7 @@
 	}
 
 	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-	    width: 610px;
+	    width: 450px;
 	}
 
 	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
@@ -1069,17 +1069,17 @@
 	}
 
 	.hero-slide h1 {
-	    font-size: 65px;
+	    font-size: 55px;
 	    margin-top: -77px
 	}
 
 	.hero-slide h1 span.span-outer{
 		margin-top: 0;
-		height: 75px;
+		height: 95px;
 	}
 
 	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-	    width: 477px;
+	    width: 327px;
 	}
 
 	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
@@ -1704,17 +1704,17 @@
 
 @media only screen and (max-width: 600px) {
 	.hero-slide h1 {
-	    font-size: 50px;
+	    font-size: 40px;
 	    margin-top: -72px
 	}
 
 	.hero-slide h1 span.span-outer{
 		margin-top: 0;
-		height: 70px;
+		height: 80px;
 	}
 
 	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-	    width: 377px;
+	    width: 257px;
 	}
 
 	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
@@ -1893,15 +1893,15 @@
 
 	.hero-slide h1 {
 	    margin-left: 20px;
-	    font-size: 42px;
+	    font-size: 37px;
 	}
 
 	.hero-slide h1 span.span-outer {
-	    height: 66px;
+	    height: 80px;
 	}
 
 	.hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-	    width: 324px;
+	    width: 254px;
 	}
 
 	.hero-slide h1 span.span-outer, .hero-slide h1 span.span-inner {
