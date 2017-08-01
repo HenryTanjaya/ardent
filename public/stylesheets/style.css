@@ -42,7 +42,7 @@ section {
 
 h1{
   font-family: 'Abril Fatface';
-  font-size: 90px;
+  font-size: 75px;
   font-weight: 100;
   line-height: 6.3rem;
 }
@@ -1204,8 +1204,8 @@ video{
   float: left;
   width: 60%;
   margin: 250px 20%;
-  font-family: 'Abril Fatface';
-  font-size: 33px;
+  font-family: 'Playfair Display';
+  font-size: 23px;
   letter-spacing: 0.05rem;
 }
 
@@ -3034,9 +3034,9 @@ video{
   width: 400px;
   padding: 4.5% 0;
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   left: 0;
-  top: calc(95% - 350px);
+  top: calc(95% - 250px);
   -moz-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
@@ -3060,9 +3060,9 @@ video{
   width: 400px;
   padding: 4.5% 0;
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   right: 0;
-  top: calc(95% - 336px);
+  top: calc(95% - 236px);
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -3208,7 +3208,7 @@ video{
 }
 
 .top-courses-info-inner{
-  padding: 70px 15%;
+  padding: 20px 15%;
   position: relative;
   z-index: 2
 }
