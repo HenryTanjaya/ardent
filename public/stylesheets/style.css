@@ -900,7 +900,7 @@ footer{
   left: 75px;
   height: calc(100vh - 160px);
   margin-top: 160px;
-  background: url("https://photos-3.dropbox.com/t/2/AADOOumXTHieYC9RYwVd5FWkNn7AWvIlLnuc-LfqrN_U8A/12/688734378/jpeg/32x32/1/_/1/2/hero-slider.jpg/EMW_l9QFGAwgAigC/s7zhSUVr1gH2PckACvLFGfpW1oKJ0QrErallLeGpg6s?size=1600x1200&size_mode=3") center center no-repeat;
+  background: url(../images/slider-home/home-1.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -1552,31 +1552,31 @@ video{
 }
 
 .home3 .slider-group-1 .image-1a .image-single-inner{
-  background-image: url(../images/slider-home/home-1.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19092858_1702467076434557_8563948505841209167_o.jpg?oh=c04236b0d2bea69dfca4a95045047d4a&oe=5A33F74D");
 }
 
 .home3 .slider-group-1 .image-1b .image-single-inner{
-  background-image: url(../images/slider-home/home-2.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19054934_1702407209773877_4021907836362697318_o.jpg?oh=8b75bfbc38641cfe96f8cf58fc5d970f&oe=59EADA51");
 }
 
 .home3 .slider-group-1 .image-1c .image-single-inner{
-  background-image: url(../images/slider-home/home-3.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19025122_1702452979769300_1965353764670166174_o.jpg?oh=8a17f20c451b0c18cda6e0eae33180b5&oe=59F422E7");
 }
 
 .home3 .slider-group-1 .image-1d .image-single-inner{
-  background-image: url(../images/slider-home/home-3.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19023628_1702500383097893_172647790960520918_o.jpg?oh=db14fdb69855c1e6a42d5d12d78a879e&oe=59FD60CE");
 }
 
 .home3 .slider-group-2 .image-2a .image-single-inner{
-  background-image: url(../images/slider-home/home-1.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19025309_1702473063100625_4516587164566055124_o.jpg?oh=faf2d102b71cdb109b7a9de9d076cfd1&oe=59F6D6F7");
 }
 
 .home3 .slider-group-2 .image-2b .image-single-inner{
-  background-image: url(../images/slider-home/home-2.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19023606_1702468183101113_355032792162237991_o.jpg?oh=c1385c8d6870919a0e4a8b9903f8b91a&oe=5A343548");
 }
 
 .home3 .slider-group-2 .image-2c .image-single-inner{
-  background-image: url(../images/slider-home/home-3.jpg);
+  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19095707_1702429466438318_673849924168583373_o.jpg?oh=3b489ddb54b547023579f6b60c1c3fe4&oe=5A31E1DB");
 }
 
 
