@@ -2,13 +2,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica';
+  font-family: 'Playfair Display';
   background-color: #fafafa;
   color: #1e1313;
   height: 100%;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.1rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -905,7 +905,7 @@ footer{
 }
 
 .hero-slide h1{
-  font-family: 'Abril Fatface';
+  font-family: 'Playfair Display';
   font-size: 78px;
   letter-spacing: 3px;
   color: #fff;
@@ -913,7 +913,7 @@ footer{
   margin-left: 240px;
   top: 50%;
   margin-top: -159px;
-  font-weight: 100
+  font-weight: 700
 }
 
 .mobile-title{
@@ -935,7 +935,7 @@ footer{
   display: block;
   overflow: hidden;
   position: relative;
-  width: 623px;
+  width: 583px;
   height: 102px;
   margin-top: 30px;
   border-bottom: 2px solid #fff
@@ -960,7 +960,7 @@ footer{
 }
 
 .hero-slide h1 span.span-outer:nth-child(1), .hero-slide h1 span.span-outer:nth-child(1) .span-inner {
-  width: 513px;
+  width: 503px;
 }
 
 .hero-slide h1.eng  span.span-outer:nth-child(1), .hero-slide h1.eng span.span-outer:nth-child(1) .span-inner {
@@ -1205,7 +1205,7 @@ video{
   width: 60%;
   margin: 250px 20%;
   font-family: 'Playfair Display';
-  font-size: 23px;
+  font-size: 25px;
   letter-spacing: 0.05rem;
 }
 
@@ -1293,10 +1293,10 @@ video{
 }
 
 .home2 h2{
-  font-family: 'Abril Fatface';
-  font-size: 60px;
+  font-family: 'Merriweather';
+  font-size: 55px;
   letter-spacing: 3px;
-  font-weight: 100;
+  font-weight: 700;
   margin: 0 0 80px;
   line-height: 1.3
 }
@@ -1556,7 +1556,6 @@ video{
 }
 
 .home3 .slider-group-1 .image-1b .image-single-inner{
-  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19054934_1702407209773877_4021907836362697318_o.jpg?oh=8b75bfbc38641cfe96f8cf58fc5d970f&oe=59EADA51");
 }
 
 .home3 .slider-group-1 .image-1c .image-single-inner{
