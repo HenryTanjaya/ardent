@@ -3562,7 +3562,7 @@
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		/*background-color: #ffffff;*/
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
