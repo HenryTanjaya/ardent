@@ -6,21 +6,24 @@ var express             = require("express"),
     LocalStrategy       = require("passport-local"),
     moment              = require("moment"),
     methodOverride      = require("method-override"),
+    Journal             = require("./models/journal"),
     Portfolio           = require("./models/portfolio"),
     User                = require("./models/user"),
     seedDB              = require("./seeds");
     
 var portfolioRoutes     = require("./routes/portfolios"),
-    indexRoutes         = require("./routes/index");
+    indexRoutes         = require("./routes/index"),
+    journalRoutes       = require("./routes/journals");
     
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v10";
+    
+var url = process.env.DATABASEURL || "mongodb://localhost/ardent";
 mongoose.connect(url);
 //mongodb://henry:henry@ds161032.mlab.com:61032/ardent
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
-// seedDB();
+seedDB();
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
@@ -38,7 +41,7 @@ app.use(function(req, res, next){
    res.locals.currentUser = req.user;
    next();
 });
-
+app.use("/journals",journalRoutes);
 app.use("/portfolios", portfolioRoutes);
 app.use("/",indexRoutes);
 
