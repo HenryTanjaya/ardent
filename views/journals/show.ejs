@@ -1,0 +1,24 @@
+<% include ../partials/headerjournal %>
+
+<div class="page-content">
+	<div id="wrapper" class="fade-in">
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date"><%=moment(journal.date).format('LL')%></span>
+						<h1><%=journal.title%></h1>
+						<p><%=journal.quote%></p>
+				</header>
+					<div class="image main"><img src="<%=journal.image%>" alt="" /></div>
+					<%=journal.desc%>
+					<div class="image main"><img src="<%=journal.image2%>" alt="" /></div>
+					<%=journal.desc2%>
+			</section>
+	    </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../partials/footerjournal %>
