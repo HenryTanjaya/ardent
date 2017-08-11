@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+<div class="page-content">
+<div class="container">
+    <div class="row">
+        <h2 style="text-align: center; margin-top:200px;">Edit <%= journal.title %> Journal</h2>
+        <div style="width: 30%; margin: 50px auto;">
+            <form action="/journals/<%= journal._id %>?_method=PUT" method="POST">
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="journal[title]" value="<%=journal.title%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="journal[quote]" value="<%=journal.quote%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="journal[image]" value="<%=journal.image1%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="journal[image2]" value="<%=journal.image2%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="date" name="journal[date]" value="<%=journal.date%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="journal[desc]" value="<%=journal.desc%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <input class="form-control" type="text" name="journal[desc2]" value="<%=journal.desc2%>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/journals">Go Back</a>
+        </div>
+    </div>
+        <form id="delete-form" action="/journals/<%=journal._id %>?_method=DELETE" method="POST">
+        <input type="submit" class="btn btn-xs btn-danger" value="Delete">
+    </form>
+</div>
+</div>
+<% include ../partials/footer %>
+
