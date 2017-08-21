@@ -4,7 +4,9 @@ var passport = require("passport");
 var User = require("../models/user");
 var middleware = require("../middleware");
 var Journal = require("../models/journal");
+var Portfolio = require("../models/portfolio");
 var moment = require("moment");
+
 
 router.get("/", function(req, res){
     res.render("landing");
@@ -37,7 +39,7 @@ router.get("/login", function(req, res){
 // handling login logic
 router.post("/login", passport.authenticate("local", 
     {
-        successRedirect: "/",
+        successRedirect: "/dashboard/journal",
         failureRedirect: "/login"
     }), function(req, res){
 });
@@ -48,7 +50,7 @@ router.get("/logout", function(req, res){
    res.redirect("/");
 });
 
-router.get("/dashboard",middleware.isLoggedIn, function(req, res,next){
+router.get("/dashboard/journal",middleware.isLoggedIn, function(req, res,next){
    Journal.find({}).exec(function(err,allJournal){
         if(err){
             console.log(err)
@@ -58,6 +60,22 @@ router.get("/dashboard",middleware.isLoggedIn, function(req, res,next){
                     console.log(err)
                 } else {
                     res.render("dashboard/journal",{journals:allJournal,moment:moment});
+                }
+            })
+        }
+    })
+});
+
+router.get("/dashboard/portfolio",middleware.isLoggedIn, function(req, res,next){
+   Portfolio.find({}).exec(function(err,allPortfolio){
+        if(err){
+            console.log(err)
+        } else {
+            Portfolio.count().exec(function(err,count){
+                if(err){
+                    console.log(err)
+                } else {
+                    res.render("dashboard/portfolio",{portfolios:allPortfolio,moment:moment});
                 }
             })
         }

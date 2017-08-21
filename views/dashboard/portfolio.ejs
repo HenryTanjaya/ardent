@@ -11,10 +11,10 @@
 <div class="page-content" style="padding:150px">
     <div class="row">
         <div class="col-md-3">
-            <p class="lead">Dashboard Journal</p>
+            <p class="lead">Dashboard Portfolio</p>
             <div class="list-group">
-                <a href="/dashboard/journal"><li class="list-group-item active">Journal</li></a>
-                <a href="/dashboard/portfolio"><li class="list-group-item">Portfolio</li></a>
+                <a href="/dashboard/journal"><li class="list-group-item">Journal</li></a>
+                <a href="/dashboard/portfolio"><li class="list-group-item active">Portfolio</li></a>
             </div>
         </div>
         <div class="col-md-9">
@@ -27,12 +27,12 @@
                         <th>Delete</th>
                     </thead>
                     <tbody>
-                    <% journals.forEach(function(journal){%>
+                    <% portfolios.forEach(function(portfolio){%>
                     <tr>
-                    <td><%=journal.title%></td>
-                    <td><%=moment(journal.date).format('L')%></td>
-                    <td><a class="btn btn-warning" href="/journals/<%=journal._id%>/edit">Edit</a></td>
-                    <td><a class="btn btn-warning" href="/journals/<%=journal._id%>?_method=DELETE" method="POST">Delete</a></td>
+                    <td><%=portfolio.name%></td>
+                    <td><%=moment(portfolio.date).format('L')%></td>
+                    <td><a class="btn btn-warning" href="/portfolios/<%=portfolio._id%>/edit">Edit</a></td>
+                    <td><a class="btn btn-warning" href="/portfolios/<%=portfolio._id%>?_method=DELETE" method="POST">Delete</a></td>
                     </tr>
                     <% } )%>
                     </tbody>
