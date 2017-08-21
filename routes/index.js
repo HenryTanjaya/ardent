@@ -2,6 +2,9 @@ var express = require("express");
 var router  = express.Router();
 var passport = require("passport");
 var User = require("../models/user");
+var middleware = require("../middleware");
+var Journal = require("../models/journal");
+var moment = require("moment");
 
 router.get("/", function(req, res){
     res.render("landing");
@@ -43,6 +46,22 @@ router.post("/login", passport.authenticate("local",
 router.get("/logout", function(req, res){
    req.logout();
    res.redirect("/");
+});
+
+router.get("/dashboard",middleware.isLoggedIn, function(req, res,next){
+   Journal.find({}).exec(function(err,allJournal){
+        if(err){
+            console.log(err)
+        } else {
+            Journal.count().exec(function(err,count){
+                if(err){
+                    console.log(err)
+                } else {
+                    res.render("dashboard/journal",{journals:allJournal,moment:moment});
+                }
+            })
+        }
+    })
 });
 
 module.exports = router;

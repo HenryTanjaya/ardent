@@ -1,0 +1,48 @@
+<% include ../partials/header %>
+<style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    th, td {
+    padding: 15px;
+}
+</style>
+<div class="page-content" style="padding:150px">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Dashboard</p>
+            <div class="list-group">
+                <li class="list-group-item active">Journal</li>
+                <li class="list-group-item">Portfolio</li>
+            </div>
+        </div>
+        <div class="col-md-9">
+                <table>
+                <div class="caption-full">
+                    <thead>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                    <% journals.forEach(function(journal){%>
+                    <tr>
+                    <td><%=journal.title%></td>
+                    <td><%=moment(journal.date).format('L')%></td>
+                    <td><a class="btn btn-warning" href="/journals/<%=journal._id%>/edit">Edit</a></td>
+                    <td><a class="btn btn-warning" href="/journals/<%=journal._id%>?_method=DELETE" method="POST">Delete</a></td>
+                    </tr>
+                    <% } )%>
+                    </tbody>
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+       
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../partials/footer %>
