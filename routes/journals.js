@@ -111,9 +111,9 @@ router.put("/:id",middleware.isLoggedIn, function(req, res){
 router.delete("/:id",middleware.isLoggedIn, function(req, res){
    Journal.findByIdAndRemove(req.params.id, function(err){
       if(err){
-          res.redirect("/journals");
+          res.redirect("/dashboard/journal");
       } else {
-          res.redirect("/journals");
+          res.redirect("/dashboard/journal");
       }
    });
 });

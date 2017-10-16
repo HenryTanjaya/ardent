@@ -134,9 +134,9 @@ router.put("/:id",middleware.isLoggedIn, function(req, res){
 router.delete("/:id",middleware.isLoggedIn, function(req, res){
    Portfolio.findByIdAndRemove(req.params.id, function(err){
       if(err){
-          res.redirect("/portfolios");
+          res.redirect("/dashboard/portfolio");
       } else {
-          res.redirect("/portfolios");
+          res.redirect("/dashboard/portfolio");
       }
    });
 });
