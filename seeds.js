@@ -25,8 +25,6 @@ var data = [
         image8:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image9:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image10:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image11:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image12:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
     
     },
     {
@@ -50,8 +48,6 @@ var data = [
         image8:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image9:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image10:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image11:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image12:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
     },
     {
         name: "Cloud's Rest1", 
@@ -75,8 +71,6 @@ var data = [
         image8:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image9:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image10:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image11:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image12:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         
     },
     {
@@ -98,8 +92,6 @@ var data = [
         image8:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image9:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
         image10:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image11:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
-        image12:"https://www.typewolf.com/assets/img/sotd/2016-04-11.png",
     }
 ]
 

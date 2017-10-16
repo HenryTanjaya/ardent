@@ -55,8 +55,6 @@ router.post("/", function(req, res){
     var image8 = req.body.image8;
     var image9 = req.body.image9;
     var image10 = req.body.image10;
-    var image11 = req.body.image11;
-    var image12 = req.body.image12;
     
     var newPortfolio = {name: name, 
                         image: image, 
@@ -78,9 +76,7 @@ router.post("/", function(req, res){
                         image7:image7,
                         image8:image8,
                         image9:image9,
-                        image10:image10,
-                        image11:image11,
-                        image12:image12
+                        image10:image10
     }
     // Create a new portfolio and save to DB
     Portfolio.create(newPortfolio, function(err, newlyCreated){

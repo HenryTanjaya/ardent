@@ -21,8 +21,6 @@ var portfolioSchema = new mongoose.Schema({
    image7:String,
    image8:String,
    image9:String,
-   image10:String,
-   image11:String,
-   image12:String,   
+   image10:String
 });
 module.exports = mongoose.model("Portfolio", portfolioSchema);
