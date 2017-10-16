@@ -303,3 +303,8 @@
         .col-md-10.col-md-offset-1.col-xs-12.col-xs-offset-0.nopadding {
             padding: 80px;
         }
+        
+        .home3 .slider-inner-selectors{
+          right: 35vw;
+          width: 750px;
+        }
