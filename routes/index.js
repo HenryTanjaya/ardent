@@ -6,6 +6,8 @@ var middleware = require("../middleware");
 var Journal = require("../models/journal");
 var Portfolio = require("../models/portfolio");
 var moment = require("moment");
+var nodemailer = require("nodemailer");
+var GMAIL_PASSWORD = process.env.GMAIL_PASSWORD || "Alderbeagle2017";
 
 
 router.get("/", function(req, res){
@@ -81,5 +83,33 @@ router.get("/dashboard/portfolio",middleware.isLoggedIn, function(req, res,next)
         }
     })
 });
+
+router.post("/",function(req,res){
+    var transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'alderbeagle@gmail.com',
+        pass: GMAIL_PASSWORD
+      }
+    });
+
+    var mailOptions = {
+      from: 'tellardent@ardent-family.com',
+      to: 'tellardent@ardent-family.com',
+      subject: 'Form',
+      html: '<b>Name : </b>'+req.body.name +
+            '<br><b>Email : </b>'+req.body.email +
+            '<br><b>Phone : </b>'+req.body.phone
+    };
+
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+        res.redirect('/');
+      }
+    });
+})
 
 module.exports = router;
