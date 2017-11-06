@@ -4643,3 +4643,7 @@ section.costi h3{
 .about-5-accomodation {
   margin-top: 20px;
 }
+
+.container.carousel {
+    padding: 100px;
+}

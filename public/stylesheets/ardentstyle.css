@@ -6,7 +6,7 @@
           object-fit:cover;
           vertical-align:middle;
         }
-        
+
         .img_description {
           position: absolute;
           text-align: center;
@@ -23,11 +23,11 @@
           line-height:2;
           transition: 2s;
           margin:0px;
-        
+
           /* transition effect. not necessary */
           transition: opacity .2s, visibility .5s;
         }
-        
+
         .img_title {
           position: absolute;
           vertical-align:middle;
@@ -45,25 +45,25 @@
           margin:auto;
           line-height:0;
         }
-        
+
         .img_wrap:hover .img_title {
           visibility: hidden;
           opacity: 0;
           transition-duration:0.5s;
         }
 
-        
+
         .img_wrap:hover .img_description {
           visibility: visible;
           opacity: 1;
           transition-duration:1.5s;
           font-family:'Playfair Display';
         }
-        
+
         .padding{
             padding-top:40px;
         }
-        
+
         .img_description2 {
           position: absolute;
           vertical-align:middle;
@@ -79,12 +79,12 @@
           font-size:17px;
           font-family:'Helvetica';
           line-height:2;
-        
+
           /* transition effect. not necessary */
           transition: opacity .2s, visibility .5s;
         }
-        
-        
+
+
         /*PORTFOLIO-PHOTO*/
         /*.wrapper {*/
         /*  width: 100%;*/
@@ -246,48 +246,48 @@
         /*.wrapper .column:nth-child(13) .inner {*/
         /*  background-image: url('https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-15/10483455_592335754230795_537719826_n.jpg');*/
         /*}*/
-        
-        
-        
+
+
+
         /*FONT*/
         .hero-slide h1{
           font-family:'Noe Display';
         }
-        
+
         .home2 h2 {
         font-family: 'Noe Display';
         }
-        
+
         html, body{
           font-family:'Apercu',serif;
         }
         .home4 h2{
           font-family:'Noe Display';
         }
-        
+
         .home3 .slider-inner-selectors{
           font-family:'Noe Display';
           font-size:45px;
-          
+
         }
-        
+
         h1{
           font-family:'Noe Display';
         }
-        
+
         .top-courses-desc{
           font-size:20px;
         }
         .top-courses .link-prev-courses{
           font-size:16px;
         }
-        
+
         h2 {
           font-family:'Noe Display';
-          
+
         }
-        
-        
+
+
         /*UNDERLINE*/
         .home3 .slider-inner-selectors .selector-single::before{
           margin:52px 0px;
@@ -295,16 +295,21 @@
         #mc_embed_signup h2{
           font-family:'Noe Display';
         }
+        /*PORTFOLIO*/
+
         
-        .container.carousel {
-            padding: 100px;
-        }
-        
+
         .col-md-10.col-md-offset-1.col-xs-12.col-xs-offset-0.nopadding {
-            padding: 80px;
+            padding: 0px;
         }
-        
+
         .home3 .slider-inner-selectors{
           right: 35vw;
           width: 750px;
         }
+
+    @media screen only and (max-width:992px){
+      .container.carousel {
+          padding: 0px;
+      }
+    }
