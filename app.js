@@ -10,12 +10,12 @@ var express             = require("express"),
     Portfolio           = require("./models/portfolio"),
     User                = require("./models/user"),
     seedDB              = require("./seeds");
-    
+
 var portfolioRoutes     = require("./routes/portfolios"),
     indexRoutes         = require("./routes/index"),
     journalRoutes       = require("./routes/journals");
-    
-    
+
+
 var url = process.env.DATABASEURL || "mongodb://localhost/ardent";
 mongoose.connect(url);
 //mongodb://henry:henry@ds161032.mlab.com:61032/ardent
@@ -49,8 +49,7 @@ app.get("*",function(req,res){
     res.send("WE ARE UNDER CONSTRUCTION, ERROR 404")
 })
 
-
-app.listen(process.env.PORT, process.env.IP, function(){
+var PORT = process.env.PORT || 5000
+app.listen(PORT, function(){
    console.log("The Ardent Server Has Started!");
 });
-
