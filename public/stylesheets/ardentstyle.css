@@ -39,7 +39,6 @@
           left: 0;
           right: 0;
           color: #FFFFFF;
-
           font-size:2em;
           font-family:'Noe Display';
           visibility:visible;
@@ -317,9 +316,6 @@
           right: 35vw;
           width: 750px;
         }
-
-    @media screen only and (max-width:992px){
-      .container.carousel {
-          padding: 0px;
-      }
-    }
+        .container.carousel {
+            padding: 100px;
+        }
