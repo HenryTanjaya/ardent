@@ -250,8 +250,8 @@
 
 
         /*FONT*/
-        .hero-slide h1{
-          font-family:'Noe Display';
+        .hero-slide h1 span.span-outer{
+          width: 483px;
         }
 
         .home2 h2 {
@@ -278,6 +278,9 @@
         .top-courses-desc{
           font-size:20px;
         }
+        .home4 .single-col-2 .col-50-inner p.first-p{
+          padding:0px;
+        }
         .top-courses .link-prev-courses{
           font-size:16px;
         }
@@ -287,6 +290,9 @@
 
         }
 
+        form label{
+          height:calc(100% + 0.5em);
+        }
 
         /*UNDERLINE*/
         .home3 .slider-inner-selectors .selector-single::before{
@@ -297,7 +303,7 @@
         }
         /*PORTFOLIO*/
 
-        
+
 
         .col-md-10.col-md-offset-1.col-xs-12.col-xs-offset-0.nopadding {
             padding: 0px;

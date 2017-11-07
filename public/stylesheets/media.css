@@ -203,9 +203,7 @@
 
 
 @media only screen and (max-width : 992px) {
-	.container.carousel {
-			padding: 0px;
-	}
+	
 
 
 	.hero-slide h1 {
