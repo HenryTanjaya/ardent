@@ -5,7 +5,7 @@ var express             = require("express"),
     middleware          = require("../middleware");
 
 function paginate(req,res,next){
-    var perPage=10;
+    var perPage=5;
     var page = req.params.page;
     Portfolio.find({}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
         if(err){
@@ -55,9 +55,9 @@ router.post("/", function(req, res){
     var image8 = req.body.image8;
     var image9 = req.body.image9;
     var image10 = req.body.image10;
-    
-    var newPortfolio = {name: name, 
-                        image: image, 
+
+    var newPortfolio = {name: name,
+                        image: image,
                         numberofservice:numberofservice,
                         service1:service1,
                         service2:service2,
@@ -91,7 +91,7 @@ router.post("/", function(req, res){
 
 //NEW PORTFOLIO
 router.get("/new",middleware.isLoggedIn, function(req, res){
-   res.render("portfolios/new"); 
+   res.render("portfolios/new");
 });
 
 //SHOW MORE INFO ABOUT PORTFOLIO

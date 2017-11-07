@@ -3,21 +3,23 @@
 <div class="page-content">
  <div class="container" style="padding-top:120px;">
      <% portfolios.forEach(function(portfolio){ %>
+    <!-- <a href="https://www.google.com"> -->
      <div class="padding">
         <div class="img_wrap">
-          <img class="img_wrap" src="<%=portfolio.image%>" ></a>
+            <img class="img_wrap" src="<%=portfolio.image%>" >
           <p class="img_title"><br><%=portfolio.name%></p>
           <%if (portfolio.numberofservice === 4) {%>
-          <p class="img_description"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br> <%=portfolio.service3%> <br> <%=portfolio.service4%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p> 
+          <p class="img_description"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br> <%=portfolio.service3%> <br> <%=portfolio.service4%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p>
           <% } else if (portfolio.numberofservice === 3){%>
-          <p class="img_description" style="line-height:2.5"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br> <%=portfolio.service3%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p> 
+          <p class="img_description" style="line-height:2.5"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br> <%=portfolio.service3%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p>
           <% } else if (portfolio.numberofservice === 2){%>
-          <p class="img_description" style="line-height:2.8"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p> 
+          <p class="img_description" style="line-height:2.8"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p>
           <% } else if (portfolio.numberofservice === 1){%>
           <p class="img_description" style="padding-top:8%;"><%=portfolio.service1%> <br> <a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p>
           <% } %>
         </div>
     </div>
+  <!-- </a> -->
     <% } ) %>
     <ul class="pagination">
         <li>
