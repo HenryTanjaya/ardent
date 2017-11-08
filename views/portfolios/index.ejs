@@ -32,15 +32,15 @@
     </div>
     <% } ) %> -->
 <!-- </div> -->
-<div class="container">
+<!-- <div class="container">
   <select onchange="window.location.href=this.value">
       <option value="/">All Year</option>
-      <option value="/portfolios/event/2017">2017</option>
-      <option value="/portfolios/event/2016">2016</option>
-      <option value="/portfolios/event/2015">2015</option>
+      <option value="/portfolios/2017">2017</option>
+      <option value="/portfolios/2016">2016</option>
+      <option value="/portfolios/2015">2015</option>
   </select>
-  <!-- <a href="/year/2015">2015&nbsp</a>|<a href="/year/2016">2016&nbsp</a>|<a href="/year/2017">2017&nbsp</a> -->
-</div>
+  <a href="/year/2015">2015&nbsp</a>|<a href="/year/2016">2016&nbsp</a>|<a href="/year/2017">2017&nbsp</a>
+</div> -->
 <section class="posts">
 <% portfolios.forEach(function(portfolio){ %>
   <article>
@@ -60,7 +60,7 @@
 
 <ul class="pagination">
     <li>
-        <% for (var i = 0; i<pages;i++){ %>
+        <% for (var i = 0; i< pages ; i++){ %>
             <% if(i===0) {%>
                 <li><a href="/portfolios"><%= i+1 %></a></li>
             <% } else {%>

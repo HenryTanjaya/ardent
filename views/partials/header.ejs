@@ -23,17 +23,20 @@
       <div class="logo"><a href="/"><img src="/images/logo/logo.svg"></a></div>
         <ul>
           <li><a href="/#about">About</a></li>
-          <li><a href="/portfolios">Our Work</a></li>
+          <li class="submenu-trigger">
+            <a href="/portfolios">Our Work</a>
+            <div id="sub-li-courses" class="sub-li">
+              <ul>
+                <li><a href="/portfolios/event/2015">2015</a></li>
+                <li><a href="/portfolios/event/2016">2016</a></li>
+                <li><a href="/portfolios/event/2017">2017</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="/journals">Journal</a></li>
           <li><a href="/#contact">Contact</a></li>
           <!--<li class="submenu-trigger">-->
           <!--  <a href="other.html">Other</a>-->
-          <!--  <div id="sub-li-courses" class="sub-li">-->
-          <!--    <ul>-->
-          <!--      <li><a href="#">Link 1</a></li>-->
-          <!--      <li><a href="#">Link 2</a></li>-->
-          <!--    </ul>-->
-          <!--  </div>-->
           <!--</li>-->
           <% if(!currentUser){ %>
             <% } else { %>
