@@ -22,9 +22,29 @@ function paginate(req,res,next){
     })
 }
 
+
 //SHOW PORTFOLIO
 router.get("/",function(req,res,next){
     paginate(req,res,next);
+})
+
+router.get("/event/:year",function(req,res,next){
+  var year = req.params.year
+  var perPage=6;
+  var page = req.params.page;
+  Portfolio.find({"$where":"this.date.getFullYear()==="+year}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
+      if(err){
+          console.log(err)
+      } else {
+          Portfolio.count().exec(function(err,count){
+              if(err){
+                  console.log(err)
+              } else {
+                  res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment});
+              }
+          })
+      }
+  })
 })
 
 router.get("/page/:page",function(req,res,next){
