@@ -5,7 +5,7 @@ var express             = require("express"),
     middleware          = require("../middleware");
 
 function paginate(req,res,next){
-    var perPage=5;
+    var perPage=6;
     var page = req.params.page;
     Portfolio.find({}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
         if(err){
