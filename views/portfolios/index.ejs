@@ -3,13 +3,16 @@
 #main > .posts > article{
   border:none;
 }
+#main > *{
+  border: none;
+}
 </style>
 <div class="page-content" style="padding-top:100px">
   <div id="wrapper" class="fade-in">
     <!-- Main -->
     <div id="main">
- <!-- <div class="container" style="padding-top:120px;">
-     <% portfolios.forEach(function(portfolio){ %>
+      <!-- <div class="container" style="padding-top:120px;"> -->
+     <!-- <% portfolios.forEach(function(portfolio){ %>
      <div class="padding">
         <div class="div_wrap">
           <a href="https://www.google.com">
@@ -27,19 +30,8 @@
           <% } %>
         </div>
     </div>
-    <% } ) %>
-    <ul class="pagination">
-        <li>
-            <% for (var i = 0; i<pages;i++){ %>
-                <% if(i===0) {%>
-                    <li><a href="/portfolios"><%= i+1 %></a></li>
-                <% } else {%>
-                    <li><a href="/portfolios/page/<%= i %>"><%= (i+1) %></a></li>
-                <% } %>
-            <% } %>
-        </li>
-    </ul>
-</div> -->
+    <% } ) %> -->
+<!-- </div> -->
 <section class="posts">
 <% portfolios.forEach(function(portfolio){ %>
   <article>
@@ -55,6 +47,18 @@
   </article>
 <% } ) %>
 </section>
+
+<ul class="pagination">
+    <li>
+        <% for (var i = 0; i<pages;i++){ %>
+            <% if(i===0) {%>
+                <li><a href="/portfolios"><%= i+1 %></a></li>
+            <% } else {%>
+                <li><a href="/portfolios/page/<%= i %>"><%= (i+1) %></a></li>
+            <% } %>
+        <% } %>
+    </li>
+</ul>
 
 </div>
 </div>
