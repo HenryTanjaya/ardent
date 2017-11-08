@@ -11,10 +11,17 @@ function paginate(req,res,next){
         if(err){
             console.log(err)
         } else {
+          // allPortfolio.forEach((portfolio)=>{
+          //   console.log(portfolio.date.substring(0,3))
+          // })
             Portfolio.count().exec(function(err,count){
                 if(err){
                     console.log(err)
-                } else {
+                  } else {
+                    // const year = 2017;
+                    // filteredPortfolio = allPortfolio.filter((portfolio)=>{
+                    //   portfolio.date.substring(0,3) == year;
+                    // })
                     res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment});
                 }
             })
