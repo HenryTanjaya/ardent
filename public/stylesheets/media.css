@@ -740,6 +740,10 @@
 
 /* ModalitÃ  tablet */
 @media only screen and (max-width : 850px) {
+	.img_title{
+		font-size: 0.65em;
+	}
+	
 	.logo {
 	    left: 30px;
 	    top: 30px;
@@ -1716,7 +1720,7 @@
 	.container.carousel {
 			padding: 0px;
 	}
-	
+
 	.hero-slide h1 {
 	    font-size: 40px;
 	    margin-top: -72px

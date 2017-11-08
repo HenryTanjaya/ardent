@@ -1,11 +1,20 @@
-<% include ../partials/header %>
-
-<div class="page-content">
- <div class="container" style="padding-top:120px;">
+<% include ../partials/headerjournal %>
+<style>
+#main > .posts > article{
+  border:none;
+}
+</style>
+<div class="page-content" style="padding-top:100px">
+  <div id="wrapper" class="fade-in">
+    <!-- Main -->
+    <div id="main">
+ <!-- <div class="container" style="padding-top:120px;">
      <% portfolios.forEach(function(portfolio){ %>
      <div class="padding">
-        <div class="img_wrap">
+        <div class="div_wrap">
+          <a href="https://www.google.com">
             <img class="img_wrap" src="<%=portfolio.image%>" >
+          </a>
           <p class="img_title"><br><%=portfolio.name%></p>
           <%if (portfolio.numberofservice === 4) {%>
           <p class="img_description"><br> <%=portfolio.service1%> <br> <%=portfolio.service2%> <br> <%=portfolio.service3%> <br> <%=portfolio.service4%> <br><a href="/portfolios/<%= portfolio._id %>" style="color:red">more</a></p>
@@ -30,9 +39,26 @@
             <% } %>
         </li>
     </ul>
-</div>
+</div> -->
+<section class="posts">
+<% portfolios.forEach(function(portfolio){ %>
+  <article>
+    <header>
+      <span class="date"><%=moment(portfolio.date).format('LL')%></span>
+      <h2><%= portfolio.name %></h2>
+    </header>
+    <a href="#" class="image fit"><img src="<%= portfolio.image %>" alt="" /></a>
+    <p>lorem ipsum</p>
+    <ul class="actions">
+      <li><a href="/portfolios/<%= portfolio._id %>" class="button">Read more</a></li>
+    </ul>
+  </article>
+<% } ) %>
+</section>
 
+</div>
+</div>
 </div>
 <!-- END PAGE CONTENT -->
 
-<% include ../partials/footer %>
+<% include ../partials/footerjournal %>

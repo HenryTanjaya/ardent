@@ -3,8 +3,8 @@ var express             = require("express"),
     router              = express.Router(),
     Journal             = require("../models/journal"),
     middleware          = require("../middleware");
-    
-    
+
+
 function paginate(req,res,next){
     var perPage=5;
     var page = req.params.page;
@@ -44,8 +44,8 @@ router.post("/", function(req, res){
     var desc    = req.body.desc;
     var image2  = req.body.image2;
     var desc2   = req.body.desc2;
-    
-    
+
+
     var newJournal ={  title:title,
                     date:date,
                     quote:quote,
@@ -68,7 +68,7 @@ router.post("/", function(req, res){
 
 //NEW JOURNAL
 router.get("/new",middleware.isLoggedIn, function(req, res){
-   res.render("journals/new"); 
+   res.render("journals/new");
 });
 
 //SHOW MORE INFO ABOUT JOURNAL

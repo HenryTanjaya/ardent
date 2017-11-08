@@ -15,7 +15,7 @@ function paginate(req,res,next){
                 if(err){
                     console.log(err)
                 } else {
-                    res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage});
+                    res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment});
                 }
             })
         }
