@@ -1713,6 +1713,11 @@
 		margin-top: 100px
 	}
 
+	.logo img{
+		margin-top:-5px;
+		width: 95px;
+	}
+
 	/*PORTFOLIO-NEW*/
 	p.portfolio-p{
 		font-size: 1rem;
@@ -1919,7 +1924,7 @@
 
 	.menu-mobile-trigger, .menu-mobile-modal .close-modal, .modal-video .close-video {
 	    right: 20px;
-	    top: 20px;
+	    top: 28px;
 	}
 
 	.hero-slide h1 {
