@@ -11,18 +11,11 @@ function paginate(req,res,next){
         if(err){
             console.log(err)
         } else {
-          // allPortfolio.forEach((portfolio)=>{
-          //   console.log(portfolio.date.substring(0,3))
-          // })
             Portfolio.count().exec(function(err,count){
                 if(err){
                     console.log(err)
                   } else {
-                    // const year = 2017;
-                    // filteredPortfolio = allPortfolio.filter((portfolio)=>{
-                    //   portfolio.date.substring(0,3) == year;
-                    // })
-                    res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment});
+                    res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count});
                 }
             })
         }
@@ -43,11 +36,11 @@ router.get("/event/:year",function(req,res,next){
       if(err){
           console.log(err)
       } else {
-          Portfolio.count().exec(function(err,count){
+          Portfolio.count({"$where":"this.date.getFullYear()==="+year}).sort({date:'descending'}).exec(function(err,count){
               if(err){
                   console.log(err)
               } else {
-                  res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment});
+                  res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count});
               }
           })
       }

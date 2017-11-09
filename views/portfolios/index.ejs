@@ -57,7 +57,7 @@
   </article>
 <% } ) %>
 </section>
-
+<% if(count > 6 ){%>
 <ul class="pagination">
     <li>
         <% for (var i = 0; i< pages ; i++){ %>
@@ -69,6 +69,7 @@
         <% } %>
     </li>
 </ul>
+<% } %>
 
 </div>
 </div>
