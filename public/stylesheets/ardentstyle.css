@@ -281,16 +281,12 @@
         .home3 .slider-inner-selectors{
           font-family:'Noe Display';
           font-size:45px;
-
         }
 
         h1{
           font-family:'Noe Display';
         }
 
-        .top-courses-desc{
-          font-size:20px;
-        }
         .home4 .single-col-2 .col-50-inner p.first-p{
           padding:0px;
         }
@@ -306,6 +302,7 @@
         form label{
           height:calc(100% + 0.5em);
         }
+
 
         /*UNDERLINE*/
         .home3 .slider-inner-selectors .selector-single::before{

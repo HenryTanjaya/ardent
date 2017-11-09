@@ -494,7 +494,7 @@
 	.top-courses-year {
 	    font-size: 27px;
 	    right: 10%;
-	    bottom: -85px;
+	    bottom: -65px;
 	    width: 100%;
 	    text-align: right;
 	    display: block;
@@ -743,7 +743,7 @@
 	.img_title{
 		font-size: 0.65em;
 	}
-	
+
 	.logo {
 	    left: 30px;
 	    top: 30px;
@@ -1452,8 +1452,8 @@
 	}
 
 	.top-courses-title h1 span.span-outer {
-	    height: 80px;
-	    width: 235px !important;
+	    height: 90px;
+	    width: 500px !important;
 	}
 
 	.top-gaga-title {
@@ -1468,10 +1468,10 @@
 	}
 
 	.top-courses-year {
-	    font-size: 23px;
-	    left: 5%;
+	    font-size: 1rem;
+	    left: 6%;
 	    right: auto;
-	    bottom: -140px;
+	    bottom: -45px;
 	    text-align: left;
 	}
 
@@ -1492,7 +1492,6 @@
 	    -webkit-column-gap: 0;
 	    -moz-column-gap: 0;
 	    column-gap: 0;
-	    margin-top: 60px
 	}
 
 	.single-teacher {
@@ -1713,6 +1712,20 @@
 	.other-summer-inner{
 		margin-top: 100px
 	}
+
+	/*PORTFOLIO-NEW*/
+	p.portfolio-p{
+		font-size: 1rem;
+	}
+	.top-courses-title h1 span.span-inner.title{
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+	.top-courses-info-inner.portfolio-date{
+		font-size:1rem;
+		padding:0px 20px;
+	}
+
 
 }
 

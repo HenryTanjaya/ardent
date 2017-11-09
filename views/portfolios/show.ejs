@@ -8,23 +8,23 @@
             <div class="image">
               <img class="inner-image" src="<%=portfolio.image%>">
             </div>
-            <div class="top-courses-title top-masterclasses-title" data-parallax="0.2">
+            <div class="top-courses-title top-masterclasses-title " data-parallax="0.2">
               <h1>
-                <span class="span-outer" style="width: 577px"><span class="span-inner" style="width: 577px"><%=portfolio.name%></span></span>
+                <span class="span-outer" style="width: 577px"><span class="span-inner title" style="width: 577px"><%=portfolio.name%></span></span>
                 <!--<span class="span-outer" style="width: 520px"><span class="span-inner" style="width: 520px">Gillot</span></span>-->
               </h1>
             </div>
-            <div class="top-courses-year" data-parallax="0.15">6-7 MAG/2017</div>
+            <div class="top-courses-year " data-parallax="0.15">Date: <%=moment(portfolio.date).format('L')%></div>
           </div>
           <div class="top-courses-info top-masterclasses-info">
-            <div class="top-courses-info-inner">
+            <div class="top-courses-info-inner portfolio-date">
               <div class="top-courses-desc"> Our Service :
                 <% if (portfolio.numberofservice === 4){ %>
-                <%=portfolio.service1%> | <%=portfolio.service2%> | <%=portfolio.service3%> | <%=portfolio.service4%>
+                <%=portfolio.service1%>, <%=portfolio.service2%>, <%=portfolio.service3%>, <%=portfolio.service4%>
                 <% } else if (portfolio.numberofservice ===3){ %>
-                <%=portfolio.service1%> | <%=portfolio.service2%> | <%=portfolio.service3%>
+                <%=portfolio.service1%>, <%=portfolio.service2%>, <%=portfolio.service3%>
                 <% } else if (portfolio.numberofservice ===2){ %>
-                <%=portfolio.service1%> | <%=portfolio.service2%>
+                <%=portfolio.service1%>, <%=portfolio.service2%>
                 <% } else if (portfolio.numberofservice ===1){ %>
                 <%=portfolio.service1%>
                 <% } %>
@@ -35,7 +35,7 @@
         </section>
 
         <section class="home1">
-          <p data-parallax="0.2"><%=portfolio.desc%></p>
+          <p data-parallax="0.2" class="portfolio-p"><%=portfolio.desc%></p>
         </section>
 
         <div class="container">
