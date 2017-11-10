@@ -56,7 +56,7 @@ img.inner-image{
   width: 100%;
   height: auto;
   max-width: 100%;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .barba-container {
@@ -900,7 +900,7 @@ footer{
   left: 75px;
   height: calc(100vh - 160px);
   margin-top: 160px;
-  background: url(../images/slider-home/home-1.jpg) center center no-repeat;
+  background: url(http://res.cloudinary.com/ardent/image/upload/v1510285970/MATERI%20WEBSITE/LANDINGPAGE/Landing1.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -1294,7 +1294,7 @@ video{
 
 .home2 h2{
   font-family: 'Merriweather';
-  font-size: 55px;
+  font-size: 45px;
   letter-spacing: 3px;
   font-weight: 700;
   margin: 0 0 80px;
