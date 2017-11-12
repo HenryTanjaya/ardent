@@ -3,7 +3,7 @@
 <div class="page-content">
         <section class="top-courses top-masterclasses">
           <div class="link-prev-courses"><%=portfolio.host%></div>
-          <div class="link-next-courses"><%=moment(portfolio.date).format('L')%></div>
+          <div class="link-next-courses"><%=moment(portfolio.date).format('DD/MM/YYYY')%></div>
           <div class="top-courses-image-inner">
             <div class="image">
               <img class="inner-image" src="<%=portfolio.image%>">
@@ -127,7 +127,11 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+
       </div>
+    </div>
+    <div class="container">
+      <a href="/portfolios">Back to portfolio</a>
     </div>
 </div>
 <!-- END PAGE CONTENT -->
