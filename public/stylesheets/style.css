@@ -3792,7 +3792,7 @@ span.word{
   position: relative;
   width: 50%;
   float: left;
-  height: auto;
+  height: 100%;
   z-index: 2;
 }
 
