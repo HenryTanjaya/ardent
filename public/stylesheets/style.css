@@ -3514,7 +3514,7 @@ form .input-line{
   font-family: "Apercu";
   text-transform: uppercase;
   -webkit-appearance: none; /* for box shadows to show on iOS */
-  margin-top: 0.8em;
+  margin-top: 0.2em;
   padding: 0 0 1.65em;
   font-size: 16px;
   width: 100%;
