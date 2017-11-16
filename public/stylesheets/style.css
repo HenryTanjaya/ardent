@@ -900,7 +900,7 @@ footer{
   left: 75px;
   height: calc(100vh - 160px);
   margin-top: 160px;
-  background: url(http://res.cloudinary.com/ardent/image/upload/v1510285970/MATERI%20WEBSITE/LANDINGPAGE/Landing1.jpg) center center no-repeat;
+  background: url(https://res.cloudinary.com/ardent/image/upload/v1510821523/MATERI%20WEBSITE/LANDINGPAGE/Landing1.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -1552,19 +1552,19 @@ video{
 }
 
 .home3 .slider-group-1 .image-1a .image-single-inner{
-  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19092858_1702467076434557_8563948505841209167_o.jpg?oh=c04236b0d2bea69dfca4a95045047d4a&oe=5A33F74D");
+  background-image: url("https://res.cloudinary.com/ardent/image/upload/v1510792606/MATERI%20WEBSITE/LANDINGPAGE/CM.jpg");
 }
 
 .home3 .slider-group-1 .image-1b .image-single-inner{
-  background-image: url("https://scontent.fcgk10-1.fna.fbcdn.net/v/t31.0-8/22136950_1827076773973586_5497650500989293778_o.jpg?_nc_eui2=v1%3AAeGjypNqcFRgXeuP_dF6mIctwMgclxKRh9oo0vgFQIPmvAvpymVnUwhCiu4P3Ni5C1CzFW2VAOybWMN_IphnwWSyFRT_qKfqJAGZ_mwNGGVJ9A&oh=90f3dca7900b97171000c883a2d007f8&oe=5A685FF1")
+  background-image: url("https://res.cloudinary.com/ardent/image/upload/v1510792606/MATERI%20WEBSITE/LANDINGPAGE/PublicRelation.jpg")
 }
 
 .home3 .slider-group-1 .image-1c .image-single-inner{
-  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19025122_1702452979769300_1965353764670166174_o.jpg?oh=8a17f20c451b0c18cda6e0eae33180b5&oe=59F422E7");
+  background-image: url("https://res.cloudinary.com/ardent/image/upload/v1510792606/MATERI%20WEBSITE/LANDINGPAGE/Event.jpg");
 }
 
 .home3 .slider-group-1 .image-1d .image-single-inner{
-  background-image: url("https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19023628_1702500383097893_172647790960520918_o.jpg?oh=db14fdb69855c1e6a42d5d12d78a879e&oe=59FD60CE");
+  background-image: url("https://res.cloudinary.com/ardent/image/upload/v1510792606/MATERI%20WEBSITE/LANDINGPAGE/Production.jpg");
 }
 
 .home3 .slider-group-2 .image-2a .image-single-inner{
