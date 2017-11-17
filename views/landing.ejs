@@ -1,8 +1,8 @@
 <% include partials/header %>
-
+<% landings.forEach(function(landing){ %>
 <div class="page-content">
         <!--<div class="home-bg"></div>-->
-        <section class="hero-slide" style="background:url(https://res.cloudinary.com/ardent/image/upload/v1510821523/MATERI%20WEBSITE/LANDINGPAGE/Landing1.jpg) center center no-repeat">
+        <section class="hero-slide" style="background:url(<%=landing.imagetitle %>) center center no-repeat">
           <h1 data-parallax="0.3">
             <span class="span-outer"><span class="span-inner">A warm hello</span></span>
             <span class="span-outer"><span class="span-inner">from Ardent</span></span>
@@ -26,7 +26,7 @@
             <div class="slider">
               <div class="slider-inner">
                 <div class="image">
-                  <img class="inner-image" src="http://res.cloudinary.com/ardent/image/upload/v1510285970/MATERI%20WEBSITE/LANDINGPAGE/Landing2.jpg">
+                  <img class="inner-image" src="<%=landing.imagevision %>">
                 </div>
               </div>
               <div class="desc-slider">
@@ -55,7 +55,7 @@
               </div>
               <div class="slider-inner">
                 <div class="image">
-                  <img class="inner-image" src="https://scontent.fpku1-1.fna.fbcdn.net/v/t1.0-9/18952756_1702426099771988_2924705969772546805_n.jpg?_nc_eui2=v1%3AAeHrbF8qxM-hf0O3dPiOaVfO15Np2WgQkEyMmNn2lFACIovLKWBhxIls-Ke-v26GcFHafBCjOQ_xVSk0BZBDAigOr11-Jmo1zD8OneXu5MnJoTavil53NNOCIg2CSjeK6yY&oh=eb27d90977bdd5e5651d6d601a7bed6e&oe=5A9F8DE1">
+                  <img class="inner-image" src="<%=landing.imagemission %>">
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@
             <div class="col-50 single-col-1">
               <div class="headrotate" data-parallax="0.35">OUR VALUES</div>
               <div class="col-50-inner">
-                <img class="inner-image" src="https://res.cloudinary.com/ardent/image/upload/v1510792606/MATERI%20WEBSITE/LANDINGPAGE/LandingContact2.jpg" data-parallax="0.25">
+                <img class="inner-image" src="<%=landing.imagevalues %>" data-parallax="0.25">
                 <div class="text">
                   <h2 data-parallax="0.25">Our Values</h2>
                   <p data-parallax="0.2">Promote integrity and accountability; <br> Foster long-term relationships with our partners and clients; <br> Encourage collaborations and innovations.
@@ -222,7 +222,7 @@
             <div class="col-50 single-col-2">
               <div class="headrotate" data-parallax="0.35">CONTACT</div>
               <div class="col-50-inner">
-                <img class="inner-image" src="http://res.cloudinary.com/ardent/image/upload/v1510293481/LandingContact1.jpg" data-parallax="0.25">
+                <img class="inner-image" src="<%=landing.imagecontact %>" data-parallax="0.25">
                 <div class="text">
                   <h2 data-parallax="0.25">Talk to you soon</h2>
                   <p class="first-p" data-parallax="0.2"><span class="red">ARDENT STUDIO</span><br>Jalan S.Parman Gg.Harapan No 9F, Petisah Hulu, Medan Baru, Kota Medan, Sumatera Utara 20151</p>
@@ -286,5 +286,5 @@
 
 </div>
 <!-- END PAGE CONTENT -->
-
+<% } ) %>
 <% include partials/footer %>

@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+<div class="page-content">
+<div class="container">
+    <div class="row">
+        <h2 style="text-align: center; margin-top:200px;">Edit Landing</h2>
+        <div style="margin: 50px auto;">
+            <form action="/landing/<%= landing._id %>?_method=PUT" method="POST">
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    image-title
+                    <input class="form-control" type="text" name="landing[imagetitle]" value="<%= landing.imagetitle %>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    image-vision
+                    <input class="form-control" type="text" name="landing[imagevision]" value="<%= landing.imagevision %>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    image-mission
+                    <input class="form-control" type="text" name="landing[imagemission]" value="<%= landing.imagemission %>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    image-values
+                    <input class="form-control" type="text" name="landing[imagevalues]" value="<%= landing.imagevalues %>">
+                </div>
+                <div class="form-group col-xs-10 col-sm-6 col-md-6 col-lg-6">
+                    image-contact
+                    <input class="form-control" type="text" name="landing[imagecontact]" value="<%= landing.imagecontact %>">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/dashboard/landing">Go Back</a>
+        </div>
+    </div>
+</div>
+</div>
+<% include ../partials/footer %>

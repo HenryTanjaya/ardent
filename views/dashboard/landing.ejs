@@ -1,0 +1,56 @@
+<% include ../partials/header %>
+<style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    th, td {
+    padding: 15px;
+}
+</style>
+<div class="page-content" style="padding:150px">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Dashboard Landing</p>
+            <div class="list-group">
+                <a href="/dashboard/journal"><li class="list-group-item">Journal</li></a>
+                <a href="/dashboard/portfolio"><li class="list-group-item">Portfolio</li></a>
+                <a href="/dashboard/landing"><li class="list-group-item active">Landing</li></a>
+            </div>
+        </div>
+        <div class="col-md-9">
+                <div class="caption-full">
+                  <% landings.forEach(function(landing){%>
+                    <table>
+                      <tr>
+                        <th>Title</th>
+                        <td><%=landing.imagetitle%></td>
+                      </tr>
+                      <tr>
+                        <th>Vision</th>
+                        <td><%=landing.imagevision%></td>
+                      </tr>
+                      <tr>
+                        <th>Mission</th>
+                        <td><%=landing.imagemission%></td>
+                      </tr>
+                      <tr>
+                        <th>Values</th>
+                        <td><%=landing.imagevalues%></td>
+                      </tr>
+                      <tr>
+                        <th>Contact</th>
+                        <td><%=landing.imagecontact%></td>
+                      </tr>
+                  </table>
+                  <td><a class="btn btn-warning" href="/landing/<%=landing._id%>/edit">Edit</a></td>
+                  <% } )%>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../partials/footer %>

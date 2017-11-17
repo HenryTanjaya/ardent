@@ -12,9 +12,42 @@ var GMAIL_PASSWORD = process.env.GMAIL_PASSWORD || "Alderbeagle2017";
 
 
 router.get("/", function(req, res){
-    res.render("landing");
+  Landing.find({}).exec(function(err,allLanding){
+      if(err){
+          console.log(err)
+      } else {
+          Landing.count().exec(function(err,count){
+              if(err){
+                  console.log(err)
+              } else {
+                  res.render("landing",{landings:allLanding});
+              }
+          })
+      }
+  })
 });
 
+router.get("/landing/:id/edit", middleware.isLoggedIn, function(req, res){
+    Landing.findById(req.params.id, function(err, foundLanding){
+        if(err){
+            console.log(err)
+        } else {
+            res.render("landings/edit", {landing: foundLanding});
+        }
+    });
+});
+
+router.put("/landing/:id",middleware.isLoggedIn, function(req, res){
+    // find and update the correct landing
+    Landing.findByIdAndUpdate(req.params.id, req.body.landing, function(err, updatedLanding){
+       if(err){
+           res.redirect("/dashboard/landing");
+       } else {
+           //redirect somewhere(show page)
+           res.redirect("/dashboard/landing");
+       }
+    });
+});
   // show register form
   // router.get("/register", function(req, res){
   //   res.render("register");
@@ -63,6 +96,22 @@ router.get("/dashboard/journal",middleware.isLoggedIn, function(req, res,next){
                     console.log(err)
                 } else {
                     res.render("dashboard/journal",{journals:allJournal,moment:moment});
+                }
+            })
+        }
+    })
+});
+
+router.get("/dashboard/landing",middleware.isLoggedIn, function(req, res,next){
+   Landing.find({}).exec(function(err,allLanding){
+        if(err){
+            console.log(err)
+        } else {
+            Landing.count().exec(function(err,count){
+                if(err){
+                    console.log(err)
+                } else {
+                    res.render("dashboard/landing",{landings:allLanding});
                 }
             })
         }

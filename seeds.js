@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 var Portfolio = require("./models/portfolio");
 var Journal = require("./models/journal");
+var Landing = require("./models/landing");
 
 var data = [
     {
@@ -241,9 +242,18 @@ var dataJournal = [
         image2: "https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         desc2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
+    }
 ]
 
+var dataLanding = [
+    {
+      imagetitle:"https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg",
+      imagevision:"https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg",
+      imagemission:"https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg",
+      imagevalues:"https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg",
+      imagecontact:"https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg"
+    }
+]
 
 function seedDB(){
    //Remove all portfolio
@@ -276,6 +286,23 @@ function seedDB(){
                     console.log(err)
                 } else {
                     console.log("added a journal");
+                }
+            })
+        })
+    });
+
+    Landing.remove({},function(err){
+        if(err){
+            console.log(err);
+        }
+        console.log("removed landing");
+        //add a few landing
+        dataLanding.forEach(function(seedLanding){
+            Landing.create(seedLanding, function(err,landing){
+                if(err){
+                    console.log(err)
+                } else {
+                    console.log("added a landing");
                 }
             })
         })
