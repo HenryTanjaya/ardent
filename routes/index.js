@@ -4,6 +4,7 @@ var passport = require("passport");
 var User = require("../models/user");
 var middleware = require("../middleware");
 var Journal = require("../models/journal");
+var Landing = require("../models/landing");
 var Portfolio = require("../models/portfolio");
 var moment = require("moment");
 var nodemailer = require("nodemailer");
@@ -67,6 +68,7 @@ router.get("/dashboard/journal",middleware.isLoggedIn, function(req, res,next){
         }
     })
 });
+
 
 router.get("/dashboard/portfolio",middleware.isLoggedIn, function(req, res,next){
    Portfolio.find({}).exec(function(err,allPortfolio){
