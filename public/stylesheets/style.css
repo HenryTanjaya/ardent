@@ -253,7 +253,9 @@ img.inner-image{
   -o-transition: all .4s cubic-bezier(.77,0,.175,1);
   transition: all .4s cubic-bezier(.77,0,.175,1);
 }
+
 /* MENU BASE
+
 .menu ul li:nth-child(1) a::before {
   background: #fcc89b;
 }
@@ -283,19 +285,19 @@ img.inner-image{
 }*/
 
 .menu ul li:nth-child(1) a::before {
-  background: #fcc89b;
+  background: #9bb0dd;
 }
 
 .menu ul li:nth-child(2) a::before {
-  background: #adc3b4;
+  background: #9bb0dd;
 }
 
 .menu ul li:nth-child(3) a::before {
-  background: #f5f0c0;
+  background: #9bb0dd;
 }
 
 .menu ul li:nth-child(4) a::before {
-  background: #f5f0c0;
+  background: #9bb0dd;
 }
 
 .menu ul li:nth-child(5) a::before {
@@ -799,7 +801,7 @@ footer{
   left: 0;
   height: 0px;
   width: 100%;
-  background: #ae0023;
+  background: #9bb0dd;
   -webkit-transition: all .4s cubic-bezier(.77,0,.175,1);
   -moz-transition: all .4s cubic-bezier(.77,0,.175,1);
   -ms-transition: all .4s cubic-bezier(.77,0,.175,1);

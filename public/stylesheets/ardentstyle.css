@@ -306,13 +306,15 @@
 
         /*UNDERLINE*/
         .home3 .slider-inner-selectors .selector-single::before{
-          margin:52px 0px;
+          margin:58px 0px;
         }
         #mc_embed_signup h2{
           font-family:'Playfair Display';
         }
         /*PORTFOLIO*/
-
+        .pagination>li>a, .pagination>li>span{
+          padding:12px 12px;
+        }
 
 
         .col-md-10.col-md-offset-1.col-xs-12.col-xs-offset-0.nopadding {
