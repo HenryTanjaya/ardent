@@ -7,6 +7,7 @@ var express             = require("express"),
 function paginate(req,res,next){
     var perPage=6;
     var page = req.params.page;
+    var filter = false;
     Portfolio.find({}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
         if(err){
             console.log(err)
@@ -15,7 +16,7 @@ function paginate(req,res,next){
                 if(err){
                     console.log(err)
                   } else {
-                    res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count});
+                    res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count,filter:filter});
                 }
             })
         }
@@ -29,7 +30,33 @@ router.get("/",function(req,res,next){
 })
 
 router.get("/event/:year",function(req,res,next){
-  var year = req.params.year
+  var year = req.params.year;
+  var perPage=6;
+  var page = req.params.page;
+  var filter = true;
+  Portfolio.find({"$where":"this.date.getFullYear()==="+year}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
+      if(err){
+          console.log(err)
+      } else {
+          Portfolio.count({"$where":"this.date.getFullYear()==="+year}).sort({date:'descending'}).exec(function(err,count){
+              if(err){
+                  console.log(err)
+              } else {
+                  res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count,year:year,filter:filter});
+              }
+          })
+      }
+  })
+})
+
+router.get("/page/:page",function(req,res,next){
+    paginate(req,res,next);
+})
+
+
+router.get("/event/:year/page/:page",function(req,res,next){
+  var year = req.params.year;
+  var filter = true;
   var perPage=6;
   var page = req.params.page;
   Portfolio.find({"$where":"this.date.getFullYear()==="+year}).sort({date:'descending'}).skip(perPage*page).limit(perPage).exec(function(err,allPortfolio){
@@ -40,15 +67,11 @@ router.get("/event/:year",function(req,res,next){
               if(err){
                   console.log(err)
               } else {
-                  res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count});
+                  res.render("portfolios/index",{portfolios:allPortfolio,pages:count/perPage,moment:moment,count:count,filter:filter,year:year});
               }
           })
       }
   })
-})
-
-router.get("/page/:page",function(req,res,next){
-    paginate(req,res,next);
 })
 
 //CREATE PORTFOLIO

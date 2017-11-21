@@ -51,13 +51,27 @@
 <% if(count > 6 ){%>
 <ul class="pagination">
     <li>
+      <% if(filter==true) {%>
         <% for (var i = 0; i< pages ; i++){ %>
             <% if(i===0) {%>
-                <li><a href="/portfolios"><%= i+1 %></a></li>
+                <li><a href="/portfolios/event/<%= year %>"><%= i+1 %></a></li>
             <% } else {%>
-                <li><a href="/portfolios/page/<%= i %>"><%= (i+1) %></a></li>
+                <li><a href="/portfolios/event/<%= year %>/page/<%= i %>"><%= (i+1) %></a></li>
             <% } %>
         <% } %>
+        <% } else if (filter==false){ %>
+          <% for (var i = 0; i< pages ; i++){ %>
+              <% if(i===0) {%>
+                  <li><a href="/portfolios"><%= i+1 %></a></li>
+              <% } else {%>
+                  <li><a href="/portfolios/page/<%= i %>"><%= (i+1) %></a></li>
+              <% } %>
+          <% } %>
+
+        <% } %>
+    </li>
+    <li>
+      <a href="/portfolios">All PORTFOLIOS</a>
     </li>
 </ul>
 <% } %>
