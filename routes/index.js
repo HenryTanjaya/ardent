@@ -144,23 +144,31 @@ router.post("/",function(req,res){
       }
     });
 
-    var mailOptions = {
-      from: 'tellardent@ardent-family.com',
-      to: 'tellardent@ardent-family.com',
-      subject: 'Form',
-      html: '<b>Name : </b>'+req.body.name +
-            '<br><b>Email : </b>'+req.body.email +
-            '<br><b>Phone : </b>'+req.body.phone
-    };
+    if(!req.body.name||!req.body.email||!req.body.phone){
+      res.redirect('/')
+    }else{
+      var mailOptions = {
+        from: 'tellardent@ardent-family.com',
+        to: 'tellardent@ardent-family.com',
+        subject: 'Form',
+        html: '<b>Name : </b>'+req.body.name +
+        '<br><b>Email : </b>'+req.body.email +
+        '<br><b>Phone : </b>'+req.body.phone
+      };
 
-    transporter.sendMail(mailOptions, function(error, info){
-      if (error) {
-        console.log(error);
-      } else {
-        console.log('Email sent: ' + info.response);
-        res.redirect('/');
-      }
-    });
+
+          transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log('Email sent: ' + info.response);
+              res.redirect('/');
+            }
+          });
+
+    }
+
+
 })
 
 module.exports = router;
