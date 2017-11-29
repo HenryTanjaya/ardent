@@ -120,7 +120,7 @@ router.get("/dashboard/landing",middleware.isLoggedIn, function(req, res,next){
 
 
 router.get("/dashboard/portfolio",middleware.isLoggedIn, function(req, res,next){
-   Portfolio.find({}).exec(function(err,allPortfolio){
+   Portfolio.find({}).sort({date:'descending'}).exec(function(err,allPortfolio){
         if(err){
             console.log(err)
         } else {
