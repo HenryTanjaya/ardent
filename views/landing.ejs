@@ -73,23 +73,23 @@
             <div class="slider-ext">
               <div class="slider-group slider-group-2">
                 <div class="slider-inner-selectors">
-                  <a href="/portfolios" id="image-2a" class="selector-single active" data-parallax="0.2">Casa de Brides<span><img src="images/arrow-next.png"></span></a>
+                  <a href="/portfolios/<%=landing.featuredlink1%>" id="image-2a" class="selector-single active" data-parallax="0.2"><%=landing.featuredname1%><span><img src="images/arrow-next.png"></span></a>
                   <br>
-                  <a href="/portfolios" id="image-2b" class="selector-single" data-parallax="0.15">Truffle Series<span><img src="images/arrow-next.png"></span></a>
+                  <a href="/portfolios/<%=landing.featuredlink2%>" id="image-2b" class="selector-single" data-parallax="0.15"><%=landing.featuredname2%><span><img src="images/arrow-next.png"></span></a>
                   <br>
-                  <a href="/portfolios" id="image-2c" class="selector-single" data-parallax="0.1">Ardentic 2.0<span><img src="images/arrow-next.png"></span></a>
+                  <a href="/portfolios/<%=landing.featuredlink3%>" id="image-2c" class="selector-single" data-parallax="0.1"><%=landing.featuredname3%><span><img src="images/arrow-next.png"></span></a>
                 </div>
                 <div class="slider">
                   <div class="slider-inner">
                     <div class="image">
                       <div class="image-single image-2a active">
-                        <div class="image-single-inner"></div>
+                        <div class="image-single-inner" style="background-image:url(<%=landing.featuredimage1%>)"></div>
                       </div>
                       <div class="image-single image-2b">
-                        <div class="image-single-inner"></div>
+                        <div class="image-single-inner" style="background-image:url(<%=landing.featuredimage2%>)"></div>
                       </div>
                       <div class="image-single image-2c">
-                        <div class="image-single-inner"></div>
+                        <div class="image-single-inner" style="background-image:url(<%=landing.featuredimage3%>)"></div>
                       </div>
                     </div>
                   </div>
@@ -97,9 +97,9 @@
                 <div class="date-group" data-parallax="0.1">
                   <div class="when">DATE:</div>
                   <div class="dates">
-                    <div class="single-date image-2a active">1 - 4 June 2017</div>
-                    <div class="single-date image-2b">7 May 2017</div>
-                    <div class="single-date image-2c">20 - 23 October 2016</div>
+                    <div class="single-date image-2a active"><%=landing.featureddate1%></div>
+                    <div class="single-date image-2b"><%=landing.featureddate2%></div>
+                    <div class="single-date image-2c"><%=landing.featureddate3%></div>
                   </div>
                 </div>
               </div>
@@ -150,23 +150,23 @@
               <!--<a href="corsi_orsolina.pdf" class="no-barba red" target="_blank"><i><b>Scarica Calendario Corsi</b></i></a><br><br>-->
               <!-- <a href="classico.html"> -->
                 <div class="single-course-mob">
-                  <img src="https://scontent.fcgk10-1.fna.fbcdn.net/v/t31.0-8/23004810_1858242197523710_6756215468582830598_o.jpg?oh=8cb9a084206a94f1bd2836ce3ccff69d&oe=5A7020E3">
-                  <h3>Casa de Brides</h3>
-                  <p>1 - 4 June 2017</p>
+                  <img src="<%=landing.featuredimage1%>">
+                  <h3><%=landing.featuredname1%></h3>
+                  <p><%=landing.featureddate1%></p>
                 </div>
               <!-- </a> -->
               <!-- <a href="contemporaneo.html"> -->
                 <div class="single-course-mob">
-                  <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19023606_1702468183101113_355032792162237991_o.jpg?oh=c1385c8d6870919a0e4a8b9903f8b91a&oe=5A343548">
-                  <h3>Truffle Series 3</h3>
-                  <p>7 May 2017</p>
+                  <img src="<%=landing.featuredimage2%>">
+                  <h3><%=landing.featuredname2%></h3>
+                  <p><%=landing.featureddate2%></p>
                 </div>
               <!-- </a> -->
               <!-- <a href="extra-corsi.html"> -->
                 <div class="single-course-mob">
-                  <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t31.0-8/19095707_1702429466438318_673849924168583373_o.jpg?oh=3b489ddb54b547023579f6b60c1c3fe4&oe=5A31E1DB">
-                  <h3>Ardentic 2.0</h3>
-                  <p>20 - 23 October 2016</p>
+                  <img src="<%=landing.featuredimage3%>">
+                  <h3><%=landing.featuredname3%></h3>
+                  <p><%=landing.featureddate3%></p>
                 </div>
               <!-- </a> -->
             </div>
