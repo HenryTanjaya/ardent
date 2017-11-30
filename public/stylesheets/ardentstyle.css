@@ -331,6 +331,12 @@
         .container.carousel {
             padding: 100px;
         }
+        .carousel-control.left{
+          background-image: none;
+        }
+        .carousel-control.right{
+          background-image: none;
+        }
 
         a.back:before{
           display: inline-block;
