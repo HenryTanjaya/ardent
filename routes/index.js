@@ -27,6 +27,10 @@ router.get("/", function(req, res){
   })
 });
 
+router.get("/services", function(req, res){
+  res.render("services");
+});
+
 router.get("/landing/:id/edit", middleware.isLoggedIn, function(req, res){
     Landing.findById(req.params.id, function(err, foundLanding){
         if(err){
