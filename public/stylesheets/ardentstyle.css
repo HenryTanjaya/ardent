@@ -304,8 +304,10 @@
         }
 
         .values-paragraph{
-          font-family:'Rubik'
+          font-family:'Rubik';
+          font-size:15px;
         }
+
 
 
         /*UNDERLINE*/

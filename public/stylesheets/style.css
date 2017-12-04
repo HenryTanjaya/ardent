@@ -23,6 +23,7 @@ a, a:hover, a:visited, a:active, a:focus{
 
 .red{
   color: #87754f !important;
+  font-family:'Apercu',serif;
 }
 
 .overflow_hidden{
