@@ -304,8 +304,12 @@
         }
 
         .values-paragraph{
-          font-family:'Rubik';
+          font-family:'Heebo';
           font-size:15px;
+        }
+
+        p.description , footer {
+          font-family: 'Heebo';
         }
 
 
@@ -383,6 +387,7 @@
 .services .service .col-lg-9{
   padding: 20px;
   border-bottom: 1px black solid;
+  font-family:'Heebo'
 }
 
 span.title-service{

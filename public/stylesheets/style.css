@@ -1207,7 +1207,7 @@ video{
   float: left;
   width: 60%;
   margin: 250px 20%;
-  font-family: 'Playfair Display';
+  font-family: 'Heebo';
   font-size: 25px;
   letter-spacing: 0.05rem;
 }
@@ -1216,6 +1216,7 @@ video{
   color: #1e1313;
   position: relative;
   display: inline-block;
+  font-family:'Playfair Display';
 }
 
 .home1 p a::before {
