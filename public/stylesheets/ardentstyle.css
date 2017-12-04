@@ -307,6 +307,7 @@
         }
         .top-courses .link-prev-courses{
           font-size:16px;
+          text-align: left;
         }
 
         h2 {
@@ -416,7 +417,7 @@
 }
 
 span.title-service{
-  color: #124097;
+  color: #172D45;
   font-size: 20px;
 }
 
