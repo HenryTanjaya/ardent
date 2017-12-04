@@ -1208,8 +1208,9 @@ video{
   width: 60%;
   margin: 250px 20%;
   font-family: 'Heebo';
-  font-size: 25px;
-  letter-spacing: 0.05rem;
+  font-size: 22px;
+  letter-spacing: 0.14rem;
+  line-height: 2;
 }
 
 .home1 p a{

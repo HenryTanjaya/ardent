@@ -280,11 +280,6 @@
           font-family:'Noe Display';
         }
 
-        .home1 p{
-          font-size: 22px;
-          letter-spacing: 0.14rem;
-          line-height: 2;
-        }
 
         .home2 p.description{
           margin:30px 0 70px;
@@ -294,6 +289,7 @@
           font-family:'Playfair Display';
           font-size:45px;
         }
+
         .home3{
           font-family: 'Heebo';
         }

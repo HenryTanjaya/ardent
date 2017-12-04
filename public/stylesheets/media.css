@@ -1118,7 +1118,8 @@
 
 	.home1 p {
 	    margin: 50px 6% 70px;
-	    font-size: 23px;
+	    font-size: 18px;
+			line-height: 1.8;
 	}
 
 	.home2-content-ext .bg {
