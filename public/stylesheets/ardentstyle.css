@@ -339,6 +339,15 @@
         #mc_embed_signup h2{
           font-family:'Playfair Display';
         }
+        @media only screen and (max-width: 767px){
+          #mc_embed_signup h2{
+              font-size: 23px;
+              margin-top: 0px;
+              margin-bottom: 20px;
+          }
+
+        }
+
         /*PORTFOLIO*/
         .pagination>li>a, .pagination>li>span{
           padding:12px 12px;
