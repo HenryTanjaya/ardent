@@ -269,18 +269,37 @@
 
         .home2 h2 {
         font-family: 'Playfair Display';
+        margin:0px;
         }
 
         html, body{
           font-family:'Apercu',serif;
         }
+
         .home4 h2{
           font-family:'Noe Display';
+        }
+
+        .home1 p{
+          font-size: 22px;
+          letter-spacing: 0.14rem;
+          line-height: 2;
+        }
+
+        .home2 p.description{
+          margin:30px 0 70px;
         }
 
         .home3 .slider-inner-selectors{
           font-family:'Playfair Display';
           font-size:45px;
+        }
+        .home3{
+          font-family: 'Heebo';
+        }
+
+        .hero-slide h1,.home2 h2{
+          font-weight: normal;
         }
 
         h1{
@@ -314,6 +333,8 @@
 
 
 
+
+
         /*UNDERLINE*/
         .home3 .slider-inner-selectors .selector-single::before{
           margin:58px 0px;
@@ -332,7 +353,7 @@
         }
 
         .home3 .slider-inner-selectors{
-          right: 45vw;
+          left: 5vw;
           width: 750px;
         }
         .carousel-control{
