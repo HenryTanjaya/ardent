@@ -387,6 +387,14 @@
           background:#9bb0dd;
           transition: all .4s cubic-bezier(.77,0,.175,1);
         }
+/*SERVICE LANDING PAGE*/
+.services-mobile{
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
 
 /*SERVICE PAGE*/
 .page-content.bottom-padding{
