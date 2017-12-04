@@ -303,6 +303,10 @@
           height:calc(100% + 0.5em);
         }
 
+        .values-paragraph{
+          font-family:'Rubik'
+        }
+
 
         /*UNDERLINE*/
         .home3 .slider-inner-selectors .selector-single::before{
