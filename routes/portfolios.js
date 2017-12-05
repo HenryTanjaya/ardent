@@ -137,6 +137,8 @@ router.get("/new",middleware.isLoggedIn, function(req, res){
    res.render("portfolios/new");
 });
 
+
+
 //SHOW MORE INFO ABOUT PORTFOLIO
 router.get("/:id", function(req, res){
     //find the campground with provided ID
@@ -174,6 +176,16 @@ router.put("/:id",middleware.isLoggedIn, function(req, res){
 });
 
 // DESTROY CAMPGROUND ROUTE
+router.get("/delete/:id",middleware.isLoggedIn, function(req, res){
+  Portfolio.findById(req.params.id, function(err, foundPortfolio){
+      if(err){
+          console.log(err)
+      } else {
+          res.render("portfolios/delete", {portfolio: foundPortfolio});
+      }
+  });
+});
+
 router.delete("/:id",middleware.isLoggedIn, function(req, res){
    Portfolio.findByIdAndRemove(req.params.id, function(err){
       if(err){

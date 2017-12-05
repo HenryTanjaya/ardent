@@ -1,0 +1,11 @@
+<% include ../partials/header %>
+
+<h2 style="padding-top:200px;">Sure want to delete <%= portfolio.name %> ? </h2>
+<div class="container">
+<form id="delete-form" action="/portfolios/<%=portfolio._id%>?_method=DELETE" method="POST">
+    <span><a href="/portfolios" class="btn btn-warning" style="position:relative">BACK</a></span>
+    <input type="submit" class="btn btn-danger" value="DELETE">
+</form>
+</div>
+
+<% include ../partials/footer %>
