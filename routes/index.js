@@ -94,6 +94,7 @@ router.get("/dashboard/journal",middleware.isLoggedIn, function(req, res,next){
    Journal.find({}).exec(function(err,allJournal){
         if(err){
             console.log(err)
+
         } else {
             Journal.count().exec(function(err,count){
                 if(err){
@@ -140,7 +141,7 @@ router.get("/dashboard/portfolio",middleware.isLoggedIn, function(req, res,next)
 });
 
 router.post("/",function(req,res){
-    var transporter = nodemailer.createTransport({
+      var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: 'alderbeagle@gmail.com',
@@ -164,15 +165,13 @@ router.post("/",function(req,res){
           transporter.sendMail(mailOptions, function(error, info){
             if (error) {
               console.log(error);
+                res.redirect('/');
             } else {
               console.log('Email sent: ' + info.response);
               res.redirect('/');
             }
           });
-
     }
-
-
 })
 
 module.exports = router;
