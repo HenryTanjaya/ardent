@@ -14,7 +14,7 @@ middlewareObj.checkPortfolioOwnership = function(req, res, next) {
  if(req.isAuthenticated()){
         Portfolio.findById(req.params.id, function(err, foundPortfolio){
            if(err){
-               console.log("campground not found")
+               console.log("portfolio not found")
                res.redirect("back");
            }  else {
                // does user own the campground?
