@@ -6,6 +6,7 @@ var express             = require("express"),
     LocalStrategy       = require("passport-local"),
     moment              = require("moment"),
     methodOverride      = require("method-override"),
+    subdomain           = require("express-subdomain"),
     Journal             = require("./models/journal"),
     Portfolio           = require("./models/portfolio"),
     User                = require("./models/user"),
@@ -14,6 +15,7 @@ var express             = require("express"),
 var portfolioRoutes     = require("./routes/portfolios"),
     indexRoutes         = require("./routes/index"),
     journalRoutes       = require("./routes/journals");
+    ardenticRoutes      = require("./routes/ardentic")
 
 
 var url = process.env.DATABASEURL || "mongodb://localhost/ardent";
@@ -44,6 +46,7 @@ app.use(function(req, res, next){
 app.use("/journals",journalRoutes);
 app.use("/portfolios", portfolioRoutes);
 app.use("/",indexRoutes);
+app.use(subdomain('ardentic', ardenticRoutes));
 
 app.get("*",function(req,res){
     res.send("WE ARE UNDER CONSTRUCTION, ERROR 404")
