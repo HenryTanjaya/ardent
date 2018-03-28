@@ -14,8 +14,8 @@ var express             = require("express"),
 
 var portfolioRoutes     = require("./routes/portfolios"),
     indexRoutes         = require("./routes/index"),
-    journalRoutes       = require("./routes/journals");
-    ardenticRoutes      = require("./routes/ardentic")
+    journalRoutes       = require("./routes/journals"),
+    ardenticRoutes      = require("./routes/ardentic");
 
 
 var url = process.env.DATABASEURL || "mongodb://localhost/ardent";
@@ -43,10 +43,10 @@ app.use(function(req, res, next){
    res.locals.currentUser = req.user;
    next();
 });
+app.use(subdomain('ardentic', ardenticRoutes));
 app.use("/journals",journalRoutes);
 app.use("/portfolios", portfolioRoutes);
 app.use("/",indexRoutes);
-app.use(subdomain('ardentic', ardenticRoutes));
 
 app.get("*",function(req,res){
     res.send("WE ARE UNDER CONSTRUCTION, ERROR 404")
